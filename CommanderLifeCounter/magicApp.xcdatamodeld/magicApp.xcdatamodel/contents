@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13240" systemVersion="16G29" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="CardManagedObject" representedClassName="CardManagedObject" syncable="YES" codeGenerationType="class">
+        <attribute name="cardColorIdentity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cardName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cardPower" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cardText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cardToughness" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cmc" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="legalitiesString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rarity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="setName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="CardSearchStringManagedObject" representedClassName="CardSearchStringManagedObject" syncable="YES" codeGenerationType="class">
+        <attribute name="searchText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <entity name="CountersIndexManagedObject" representedClassName="CountersIndexManagedObject" syncable="YES" codeGenerationType="class">
+        <attribute name="index" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="ManaCountersManagedObject" representedClassName="ManaCountersManagedObject" syncable="YES" codeGenerationType="class">
+        <attribute name="manaFifthCounter" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="manaFirstCounter" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="manaFourthCounter" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="manaSecondCounter" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="manaSeventhCounter" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="manaSixthCounter" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="manaThirdCounter" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="playerCounter" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="PlayerCountersManagedObject" inverseName="manaCounter" inverseEntity="PlayerCountersManagedObject" syncable="YES"/>
+    </entity>
+    <entity name="NoteDetailsManagedObject" representedClassName="NoteDetailsManagedObject" syncable="YES" codeGenerationType="class">
+        <attribute name="attributedText" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="noteRelation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NoteManagedObject" inverseName="noteDetailsRelation" inverseEntity="NoteManagedObject" syncable="YES"/>
+    </entity>
+    <entity name="NoteManagedObject" representedClassName="NoteManagedObject" syncable="YES" codeGenerationType="class">
+        <attribute name="dateString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="detailedString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="noteString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="placeholderForCell" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="noteDetailsRelation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NoteDetailsManagedObject" inverseName="noteRelation" inverseEntity="NoteDetailsManagedObject" syncable="YES"/>
+    </entity>
+    <entity name="OpponentManagedObject" representedClassName="OpponentManagedObject" syncable="YES" codeGenerationType="class">
+        <attribute name="avatar" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="avatarPlaceholder" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="fourthCounterName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thirdCounterName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="counter" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="PlayerCountersManagedObject" inverseName="opponent" inverseEntity="PlayerCountersManagedObject" syncable="YES"/>
+    </entity>
+    <entity name="PlayerCountersManagedObject" representedClassName="PlayerCountersManagedObject" syncable="YES" codeGenerationType="class">
+        <attribute name="firstCounter" optional="YES" attributeType="Integer 32" defaultValueString="20" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="fourthCounter" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="secondCounter" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="thirdCounter" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="interface" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="PlayerInterfaceManagedObject" inverseName="mainCounter" inverseEntity="PlayerInterfaceManagedObject" syncable="YES"/>
+        <relationship name="manaCounter" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="ManaCountersManagedObject" inverseName="playerCounter" inverseEntity="ManaCountersManagedObject" syncable="YES"/>
+        <relationship name="opponent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="OpponentManagedObject" inverseName="counter" inverseEntity="OpponentManagedObject" syncable="YES"/>
+        <relationship name="player" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PlayerManagedObject" inverseName="counters" inverseEntity="PlayerManagedObject" syncable="YES"/>
+    </entity>
+    <entity name="PlayerInterfaceManagedObject" representedClassName="PlayerInterfaceManagedObject" syncable="YES" codeGenerationType="class">
+        <attribute name="addFourthRowButtonImage" optional="YES" attributeType="Binary" defaultValueString="+" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="addThirdRowButtonImage" optional="YES" attributeType="Binary" defaultValueString="+" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="isHiddenFourthRow" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isHiddenThirdRow" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="mainCounter" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="PlayerCountersManagedObject" inverseName="interface" inverseEntity="PlayerCountersManagedObject" syncable="YES"/>
+    </entity>
+    <entity name="PlayerManagedObject" representedClassName="PlayerManagedObject" syncable="YES" codeGenerationType="class">
+        <attribute name="avatar" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="avatarPlaceholder" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="fourthCounterName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thirdCounterName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="counters" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="PlayerCountersManagedObject" inverseName="player" inverseEntity="PlayerCountersManagedObject" syncable="YES"/>
+    </entity>
+    <entity name="SearchBarManagedObject" representedClassName="SearchBarManagedObject" syncable="YES" codeGenerationType="class">
+        <attribute name="searchBarText" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CardManagedObject" positionX="504" positionY="189" width="128" height="223"/>
+        <element name="CardSearchStringManagedObject" positionX="504" positionY="422" width="128" height="73"/>
+        <element name="CountersIndexManagedObject" positionX="99" positionY="380" width="128" height="58"/>
+        <element name="ManaCountersManagedObject" positionX="-162" positionY="225" width="128" height="163"/>
+        <element name="NoteDetailsManagedObject" positionX="693" positionY="71" width="128" height="88"/>
+        <element name="NoteManagedObject" positionX="504" positionY="45" width="128" height="133"/>
+        <element name="OpponentManagedObject" positionX="135" positionY="-27" width="128" height="148"/>
+        <element name="PlayerCountersManagedObject" positionX="97" positionY="152" width="128" height="163"/>
+        <element name="PlayerInterfaceManagedObject" positionX="297" positionY="54" width="128" height="118"/>
+        <element name="PlayerManagedObject" positionX="-63" positionY="-25" width="128" height="133"/>
+        <element name="SearchBarManagedObject" positionX="504" positionY="506" width="128" height="58"/>
+    </elements>
+</model>

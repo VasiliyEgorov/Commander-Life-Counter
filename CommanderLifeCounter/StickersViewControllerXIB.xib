@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StickersViewController">
+            <connections>
+                <outlet property="addStickerButton" destination="eAh-SI-Hm3" id="g7M-l1-lvh"/>
+                <outlet property="avatarImageView" destination="6cG-Y1-Cuz" id="kJr-OV-NLp"/>
+                <outlet property="layerView" destination="6zt-d0-p9Q" id="ACP-Bq-psL"/>
+                <outlet property="trashView" destination="OjX-a3-lrH" id="ZHR-8m-fYS"/>
+                <outlet property="view" destination="iN0-l3-epB" id="d3O-2i-ExC"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="QK1-85-WGN">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6zt-d0-p9Q">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6cG-Y1-Cuz">
+                            <rect key="frame" x="0.0" y="114" width="375" height="375"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="6cG-Y1-Cuz" secondAttribute="height" multiplier="1:1" id="RJo-tO-VwW"/>
+                            </constraints>
+                        </imageView>
+                        <view contentMode="scaleToFill" horizontalHuggingPriority="999" verticalHuggingPriority="999" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OjX-a3-lrH">
+                            <rect key="frame" x="0.0" y="567" width="375" height="100"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eAh-SI-Hm3">
+                                    <rect key="frame" x="170" y="32.5" width="35" height="35"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" backgroundImage="addStickerOrTextButton"/>
+                                    <connections>
+                                        <action selector="addStickerButtonAction:" destination="-1" eventType="touchUpInside" id="fvr-L5-DcQ"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="6cG-Y1-Cuz" secondAttribute="trailing" id="F3W-1Y-5yP"/>
+                        <constraint firstItem="6cG-Y1-Cuz" firstAttribute="leading" secondItem="6zt-d0-p9Q" secondAttribute="leading" id="HaX-5l-MWZ"/>
+                        <constraint firstItem="6cG-Y1-Cuz" firstAttribute="top" secondItem="6zt-d0-p9Q" secondAttribute="top" constant="114" id="qgA-2N-1kL"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="6zt-d0-p9Q" secondAttribute="trailing" id="7gu-gQ-kVD"/>
+                <constraint firstItem="6zt-d0-p9Q" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="D26-Ho-wby"/>
+                <constraint firstItem="QK1-85-WGN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Q0K-Vz-TDp"/>
+                <constraint firstAttribute="trailing" secondItem="QK1-85-WGN" secondAttribute="trailing" id="V5Y-zh-hBa"/>
+                <constraint firstItem="6zt-d0-p9Q" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="mw7-DR-V1H"/>
+                <constraint firstAttribute="bottom" secondItem="QK1-85-WGN" secondAttribute="bottom" id="mzS-dY-f32"/>
+                <constraint firstAttribute="bottom" secondItem="6zt-d0-p9Q" secondAttribute="bottom" id="siD-Z7-Un3"/>
+                <constraint firstItem="QK1-85-WGN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="vzy-sZ-iT8"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="addStickerOrTextButton" width="35" height="35"/>
+        <image name="bg" width="1198" height="2027"/>
+    </resources>
+</document>
