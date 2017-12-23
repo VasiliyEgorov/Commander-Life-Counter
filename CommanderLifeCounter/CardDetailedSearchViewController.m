@@ -307,7 +307,7 @@
 
 #pragma mark - Constraints
 
-- (void) addConstraintsToView:(UIView*)view andToCellsImage:(CustomDetailedSearchCell*)cell {
+- (void)addConstraintsToView:(UIView*)view andToCellsImage:(CustomDetailedSearchCell*)cell {
     
     CGFloat multiplierHeight;
     CGFloat multiplierWidth;

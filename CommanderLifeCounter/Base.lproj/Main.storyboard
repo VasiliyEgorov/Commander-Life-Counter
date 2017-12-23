@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3vi-0e-D8Z">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3vi-0e-D8Z">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -445,7 +445,7 @@
                                                     <rect key="frame" x="10" y="2" width="355" height="50.5"/>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="HEf-md-qzQ">
-                                                    <rect key="frame" x="20" y="5" width="278" height="44.5"/>
+                                                    <rect key="frame" x="20" y="5" width="271" height="44.5"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="uXk-t2-CTT">
                                                             <rect key="frame" x="0.0" y="0.0" width="112" height="26.5"/>
@@ -481,7 +481,7 @@
                                                     </constraints>
                                                 </stackView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rXH-vm-cfU">
-                                                    <rect key="frame" x="306" y="7" width="41" height="41"/>
+                                                    <rect key="frame" x="299" y="7" width="41" height="41"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="41" id="BgS-qP-Xml"/>
                                                         <constraint firstAttribute="width" constant="41" id="OCR-VF-c2b"/>
@@ -575,6 +575,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T2Q-Yn-ze5">
                                 <rect key="frame" x="0.0" y="64" width="375" height="420"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <viewLayoutGuide key="safeArea" id="ILN-IE-bKS"/>
                                 <connections>
                                     <segue destination="jN8-y2-nDe" kind="embed" identifier="ChildTableViewCounter" id="mbA-ud-IP1"/>
                                 </connections>
@@ -1274,26 +1275,26 @@
                                                         <constraint firstAttribute="height" constant="117" id="off-Nl-b8U"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pjr-md-nBe" customClass="CustomCardDetailsLabel">
-                                                    <rect key="frame" x="14" y="10" width="280" height="23"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pjr-md-nBe" customClass="CustomCardDetailsLabel">
+                                                    <rect key="frame" x="21" y="10" width="266" height="23"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="19"/>
                                                     <color key="textColor" red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H4d-IR-ZTo" customClass="CustomCardDetailsLabel">
-                                                    <rect key="frame" x="14" y="36" width="280" height="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" ambiguous="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H4d-IR-ZTo" customClass="CustomCardDetailsLabel">
+                                                    <rect key="frame" x="21" y="36" width="266" height="17"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="14"/>
                                                     <color key="textColor" red="0.50980392156862742" green="0.50980392156862742" blue="0.50980392156862742" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h94-3B-Ret" customClass="CustomCardDetailsLabel">
-                                                    <rect key="frame" x="14" y="56" width="280" height="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h94-3B-Ret" customClass="CustomCardDetailsLabel">
+                                                    <rect key="frame" x="21" y="56" width="266" height="17"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="14"/>
                                                     <color key="textColor" red="0.50980392156862742" green="0.50980392156862742" blue="0.50980392156862742" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcd-4X-kEP" customClass="CustomCardDetailsLabel">
-                                                    <rect key="frame" x="14" y="76" width="280" height="35"/>
+                                                    <rect key="frame" x="21" y="73" width="266" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="35" id="5JR-Lk-LYC"/>
                                                     </constraints>
@@ -1302,7 +1303,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g6K-ke-RTm">
-                                                    <rect key="frame" x="296" y="10" width="65" height="101"/>
+                                                    <rect key="frame" x="289" y="13" width="65" height="101"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="65" id="Vqa-7c-uHg"/>
                                                         <constraint firstAttribute="height" constant="101" id="y2F-8x-VZL"/>
@@ -1427,16 +1428,16 @@
                                                     <rect key="frame" x="10" y="2" width="355" height="50.5"/>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wyb-4e-l0j">
-                                                    <rect key="frame" x="16" y="18.5" width="17.5" height="17.5"/>
+                                                    <rect key="frame" x="23" y="21.5" width="17.5" height="11.5"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OKz-4i-cNO">
-                                                    <rect key="frame" x="51" y="16" width="288" height="21"/>
+                                                    <rect key="frame" x="58" y="19" width="274" height="15"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
                                                     <color key="textColor" red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7mP-EV-TOO">
-                                                    <rect key="frame" x="341.5" y="22" width="17.5" height="12"/>
+                                                    <rect key="frame" x="334.5" y="25" width="17.5" height="6"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
@@ -1540,28 +1541,28 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4tu-op-tor" customClass="CustomRoundedImageView">
-                                <rect key="frame" x="75" y="72" width="225" height="243.5"/>
+                                <rect key="frame" x="75" y="72" width="375" height="243.5"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o2g-3L-2sQ">
-                                <rect key="frame" x="38" y="323.5" width="299" height="233.5"/>
+                                <rect key="frame" x="38" y="323.5" width="375" height="233.5"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg1" translatesAutoresizingMaskIntoConstraints="NO" id="Fhq-Lf-tMt">
-                                        <rect key="frame" x="0.0" y="0.0" width="299" height="233.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="233.5"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yqa-NG-uar">
-                                        <rect key="frame" x="8" y="8" width="283" height="217.5"/>
+                                        <rect key="frame" x="8" y="8" width="375" height="217.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="6LV-TI-twQ">
-                                                <rect key="frame" x="0.0" y="0.0" width="283" height="26"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="26"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Creature - humannnnnnn" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4jh-bR-kxy" customClass="CustomCardDetailsLabel">
-                                                        <rect key="frame" x="0.0" y="0.0" width="201.5" height="26"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="267" height="26"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
                                                         <color key="textColor" red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Specialllllll" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OYg-AW-OQW" customClass="CustomCardDetailsLabel">
-                                                        <rect key="frame" x="203.5" y="0.0" width="79.5" height="26"/>
+                                                        <rect key="frame" x="259" y="0.0" width="108" height="26"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
                                                         <color key="textColor" red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -1569,10 +1570,10 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="w0s-mD-nDy">
-                                                <rect key="frame" x="0.0" y="34" width="283" height="87"/>
+                                                <rect key="frame" x="0.0" y="34" width="375" height="87"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wjZ-Kf-lsT" customClass="CustomCardDetailsLabel">
-                                                        <rect key="frame" x="0.0" y="0.0" width="283" height="87"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="87"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
                                                         <color key="textColor" red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -1580,16 +1581,16 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="1GV-wq-QZv">
-                                                <rect key="frame" x="0.0" y="129" width="283" height="26"/>
+                                                <rect key="frame" x="0.0" y="129" width="375" height="26"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVl-e9-vQd" customClass="CustomCardDetailsLabel">
-                                                        <rect key="frame" x="0.0" y="0.0" width="168.5" height="26"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="223.5" height="26"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
                                                         <color key="textColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Power" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tuM-WM-2Zj" customClass="CustomCardDetailsLabel">
-                                                        <rect key="frame" x="170.5" y="0.0" width="112.5" height="26"/>
+                                                        <rect key="frame" x="215.5" y="0.0" width="151.5" height="26"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
                                                         <color key="textColor" red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -1597,10 +1598,10 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="14w-Zs-QM2">
-                                                <rect key="frame" x="0.0" y="163" width="283" height="54.5"/>
+                                                <rect key="frame" x="0.0" y="163" width="375" height="54.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lagalities" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1pw-LM-8Hu" customClass="CustomCardDetailsLabel">
-                                                        <rect key="frame" x="0.0" y="0.0" width="283" height="54.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="54.5"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="14"/>
                                                         <color key="textColor" red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -1628,16 +1629,16 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Sks-vN-wgQ">
-                                <rect key="frame" x="30" y="27" width="329" height="28.5"/>
+                                <rect key="frame" x="30" y="27" width="375" height="28.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Card name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ay6-pm-raJ" customClass="CustomCardDetailsLabel">
-                                        <rect key="frame" x="0.0" y="0.0" width="221.5" height="28.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="252.5" height="28.5"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pds-q8-Xw3" customClass="CustomCardDetailsLabel">
-                                        <rect key="frame" x="221.5" y="0.0" width="107.5" height="28.5"/>
+                                        <rect key="frame" x="260.5" y="0.0" width="122.5" height="28.5"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -2139,7 +2140,7 @@
         <image name="water_roll" width="60" height="60"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="3F1-86-jKx"/>
+        <segue reference="rCx-yF-NpC"/>
         <segue reference="SDU-lB-CVk"/>
     </inferredMetricsTieBreakers>
 </document>

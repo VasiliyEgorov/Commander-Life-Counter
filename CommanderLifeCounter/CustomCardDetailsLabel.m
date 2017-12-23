@@ -11,12 +11,9 @@
 @implementation CustomCardDetailsLabel
 
 
-
-
 - (void) layoutSubviews {
     [super layoutSubviews];
-    
-    
+
     self.adjustsFontSizeToFitWidth = YES;
     self.minimumScaleFactor = 0.5;
 }

@@ -36,7 +36,6 @@
 }
 
 
-
 #pragma mark - MPVolumeView Setup
 
 - (void)setupVolumeView {
@@ -73,9 +72,7 @@
             *stop = YES;
         }
     }];
-    
-   
-    
+
     [self setDefaultVolumeValueForSlider:self.slider];
     [self.slider addTarget:self action:@selector(volumeViewSliderValueChanged:) forControlEvents:UIControlEventValueChanged];
 }

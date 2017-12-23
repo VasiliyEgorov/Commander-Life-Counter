@@ -65,10 +65,7 @@
 
 - (void) viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    
-    
-    
-            
+
             [self.avatarData placePhoto:self.originalPhoto forAvatarImageView:self.avatarImageView success:^(UIImage *editedPhoto) {
                 
                 if (editedPhoto) {
@@ -81,10 +78,8 @@
                     NSLog(@"%f %f", self.originalPhoto.size.width, self.originalPhoto.size.height);
                 }
             }];
-    
-
-
 }
+
 - (void) configureEditButton {
     
     self.editButton = [UIButton buttonWithType:UIButtonTypeSystem];
