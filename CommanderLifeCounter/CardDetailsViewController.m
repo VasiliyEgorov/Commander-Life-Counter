@@ -227,6 +227,18 @@
     
     float h = [UIScreen mainScreen].bounds.size.height;
     
+    if (h == IPHONE_X){
+        self.navigationItem.title = @"Card details";
+        
+        self.topTopStackViewContraint.constant = 105;
+        
+        self.imageViewLeadingConstraint.constant = 95;
+        self.imageViewTrailingConstraint.constant = 95;
+        self.imageViewTopConstraint.constant = 80;
+        self.bottomViewBottomConstraint.constant = 50;
+        self.topViewtopConstraint.constant = 45;
+        
+    }
     if (h == IPHONE_6_7_PLUS){
         self.navigationItem.title = @"Card details";
         

@@ -127,9 +127,13 @@
     
     if ([view isKindOfClass:[UIImageView class]]) {
         
-        
+        float h = [UIScreen mainScreen].bounds.size.height;
+        CGFloat widthValue = [UIScreen mainScreen].bounds.size.width / 2;
+        if (h == IPHONE_X) {
+            widthValue = [UIScreen mainScreen].bounds.size.width / 1.6;
+        }
         NSLayoutConstraint *height = [NSLayoutConstraint constraintWithItem:view attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:0 multiplier:1 constant:[UIScreen mainScreen].bounds.size.height / 2.3];
-        NSLayoutConstraint *width = [NSLayoutConstraint constraintWithItem:view attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:0 multiplier:1 constant:[UIScreen mainScreen].bounds.size.width / 2];
+        NSLayoutConstraint *width = [NSLayoutConstraint constraintWithItem:view attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:0 multiplier:1 constant:widthValue];
         NSLayoutConstraint *centerX = [NSLayoutConstraint constraintWithItem:view attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self.dimView attribute:NSLayoutAttributeCenterX multiplier:1 constant:0];
         NSLayoutConstraint *centerY = [NSLayoutConstraint constraintWithItem:view attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:self.dimView attribute:NSLayoutAttributeCenterY multiplier:1 constant:0];
         

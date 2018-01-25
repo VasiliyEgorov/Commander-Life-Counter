@@ -229,7 +229,6 @@
         CGRect frame = [self.doodleView convertRect:path.bounds toView:self.doodleView];
         if (frame.origin.y == originMaxY) {
             halfMaxlineWidth = path.lineWidth / 2;
-            // height = frame.size.height;
             
         }
         if (frame.origin.y == originMinY) {
@@ -240,72 +239,13 @@
     
         frameToCrop = CGRectMake(0, originMinY - halfMinlineWidth, self.doodleView.frame.size.width, rectMax.origin.y + rectMax.size.height - originMinY + halfMaxlineWidth + halfMinlineWidth);
    
-    NSLog(@"height %f", rectMax.origin.y + rectMax.size.height);
-    NSLog(@"originMaxY result %f", originMaxY);
-    NSLog(@"originMinY result %f", originMinY);
-    UIImage *merdgedImage = [UIImage mergeViewAndItsLayer:self.doodleView];
-    UIImage *croppedImage = [UIImage cropImage:merdgedImage byCropViewFrames:frameToCrop];
-    
-    [self.notesDelegate receiveImage:croppedImage];
-    
-    [self.navigationController popViewControllerAnimated:YES];
-/*
-    NSArray *originsSorted = [arrayWithOriginsY sortedArrayUsingSelector:@selector(compare:)];
-    NSArray *heightsSorted = [arrayWithHeights sortedArrayUsingSelector:@selector(compare:)];
-    
-    NSNumber *originMinValue = [originsSorted firstObject];
-    CGFloat originMinY = [originMinValue floatValue];
-    
-    NSNumber *originMaxValue = [originsSorted lastObject];
-    CGFloat originMaxY = [originMaxValue floatValue];
    
-    NSNumber *heightMaxValue = [heightsSorted lastObject];
-    CGFloat heightMax = [heightMaxValue floatValue];
-    
-    CGFloat height = 0;
-    CGFloat halfMaxlineWidth = 0;
-    CGFloat halfMinlineWidth = 0;
-    CGRect frameToCrop;
-    
-    for (UIBezierPath *path in pathsArray) {
-        CGRect frame = [self.doodleView convertRect:path.bounds toView:self.doodleView];
-        if (frame.origin.y == originMaxY) {
-            halfMaxlineWidth = path.lineWidth / 2;
-           // height = frame.size.height;
-            
-        }
-        if (frame.origin.y == originMinY) {
-            halfMinlineWidth = path.lineWidth / 2;
-        }
-        
-        if (frame.size.height == heightMax) {
-            if (frame.origin.y == originMinY) {
-                height = frame.origin.y + frame.size.height - originMinY;
-            } else {
-                height = frame.origin.y + frame.size.height - originMaxY;
-            }
-            
-        }
-    }
-    
-    
-    
-    if ([pathsArray count] > 1) {
-        frameToCrop = CGRectMake(0, originMinY - halfMinlineWidth, self.doodleView.frame.size.width, height + halfMaxlineWidth + halfMinlineWidth);
-    }
-    else {
-        frameToCrop = CGRectMake(0, originMinY - halfMinlineWidth, self.doodleView.frame.size.width, height + halfMaxlineWidth + halfMinlineWidth);
-    }
-    NSLog(@"height %f", height);
-    NSLog(@"originMaxY result %f", originMaxY);
-    NSLog(@"originMinY result %f", originMinY);
     UIImage *merdgedImage = [UIImage mergeViewAndItsLayer:self.doodleView];
     UIImage *croppedImage = [UIImage cropImage:merdgedImage byCropViewFrames:frameToCrop];
     
     [self.notesDelegate receiveImage:croppedImage];
     
     [self.navigationController popViewControllerAnimated:YES];
-    */
 }
 
 

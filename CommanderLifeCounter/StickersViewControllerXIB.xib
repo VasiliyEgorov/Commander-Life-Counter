@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -28,16 +29,16 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6zt-d0-p9Q">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6cG-Y1-Cuz">
-                            <rect key="frame" x="0.0" y="114" width="375" height="375"/>
+                            <rect key="frame" x="0.0" y="136" width="375" height="375"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="6cG-Y1-Cuz" secondAttribute="height" multiplier="1:1" id="RJo-tO-VwW"/>
                             </constraints>
                         </imageView>
                         <view contentMode="scaleToFill" horizontalHuggingPriority="999" verticalHuggingPriority="999" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OjX-a3-lrH">
-                            <rect key="frame" x="0.0" y="567" width="375" height="100"/>
+                            <rect key="frame" x="0.0" y="547" width="375" height="100"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eAh-SI-Hm3">
@@ -49,14 +50,15 @@
                                     </connections>
                                 </button>
                             </subviews>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </view>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="trailing" secondItem="6cG-Y1-Cuz" secondAttribute="trailing" id="F3W-1Y-5yP"/>
-                        <constraint firstItem="6cG-Y1-Cuz" firstAttribute="leading" secondItem="6zt-d0-p9Q" secondAttribute="leading" id="HaX-5l-MWZ"/>
-                        <constraint firstItem="6cG-Y1-Cuz" firstAttribute="top" secondItem="6zt-d0-p9Q" secondAttribute="top" constant="114" id="qgA-2N-1kL"/>
+                        <constraint firstItem="6cG-Y1-Cuz" firstAttribute="leading" secondItem="6zt-d0-p9Q" secondAttribute="leading" id="Adj-Hu-SKp"/>
+                        <constraint firstItem="6cG-Y1-Cuz" firstAttribute="centerX" secondItem="6zt-d0-p9Q" secondAttribute="centerX" id="Zvw-Ey-ZF7"/>
+                        <constraint firstItem="6cG-Y1-Cuz" firstAttribute="centerY" secondItem="6zt-d0-p9Q" secondAttribute="centerY" id="b86-7J-cvY"/>
+                        <constraint firstAttribute="trailing" secondItem="6cG-Y1-Cuz" secondAttribute="trailing" id="zJS-gK-8cb"/>
                     </constraints>
                 </view>
             </subviews>
@@ -66,11 +68,12 @@
                 <constraint firstItem="6zt-d0-p9Q" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="D26-Ho-wby"/>
                 <constraint firstItem="QK1-85-WGN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Q0K-Vz-TDp"/>
                 <constraint firstAttribute="trailing" secondItem="QK1-85-WGN" secondAttribute="trailing" id="V5Y-zh-hBa"/>
-                <constraint firstItem="6zt-d0-p9Q" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="mw7-DR-V1H"/>
+                <constraint firstItem="6zt-d0-p9Q" firstAttribute="top" secondItem="MfF-G4-pQb" secondAttribute="top" id="mw7-DR-V1H"/>
                 <constraint firstAttribute="bottom" secondItem="QK1-85-WGN" secondAttribute="bottom" id="mzS-dY-f32"/>
-                <constraint firstAttribute="bottom" secondItem="6zt-d0-p9Q" secondAttribute="bottom" id="siD-Z7-Un3"/>
+                <constraint firstItem="MfF-G4-pQb" firstAttribute="bottom" secondItem="6zt-d0-p9Q" secondAttribute="bottom" id="siD-Z7-Un3"/>
                 <constraint firstItem="QK1-85-WGN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="vzy-sZ-iT8"/>
             </constraints>
+            <viewLayoutGuide key="safeArea" id="MfF-G4-pQb"/>
             <point key="canvasLocation" x="24.5" y="52.5"/>
         </view>
     </objects>

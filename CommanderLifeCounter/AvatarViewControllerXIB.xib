@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -28,7 +28,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ho-HQ-uGb">
-                    <rect key="frame" x="0.0" y="146" width="375" height="375"/>
+                    <rect key="frame" x="0.0" y="156" width="375" height="375"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cRp-WK-483">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
@@ -54,11 +54,11 @@
                 <constraint firstItem="4Ee-a3-SGj" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="CH7-qD-xrw"/>
                 <constraint firstItem="4Ee-a3-SGj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="EsV-6L-lvO"/>
                 <constraint firstItem="4ho-HQ-uGb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="a0l-HC-VSc"/>
-                <constraint firstAttribute="trailing" secondItem="4ho-HQ-uGb" secondAttribute="trailing" id="ajA-ph-gxs"/>
-                <constraint firstItem="4ho-HQ-uGb" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="eck-o0-7ai"/>
+                <constraint firstItem="4ho-HQ-uGb" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="daN-IU-wDk"/>
+                <constraint firstItem="4ho-HQ-uGb" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="eck-o0-7ai"/>
                 <constraint firstItem="4Ee-a3-SGj" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="k0o-Sf-Dkr"/>
-                <constraint firstItem="4Ee-a3-SGj" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="ray-0c-UDw"/>
-                <constraint firstItem="4ho-HQ-uGb" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="vbc-5R-OWF"/>
+                <constraint firstItem="4Ee-a3-SGj" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="ray-0c-UDw"/>
+                <constraint firstItem="4ho-HQ-uGb" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="vbc-5R-OWF"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="25.5" y="52.5"/>

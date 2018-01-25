@@ -141,7 +141,10 @@ static NSString *kSettingsStartAnimation = @"animation";
         height = 25;
         width = height + (height * 0.5);
     }
-    
+    if (h == IPHONE_X) {
+        height = 25;
+        width = height + (height * 0.5);
+    }
     
     float originY = (self.navigationController.navigationBar.frame.size.height - height) / 2 + [UIApplication sharedApplication].statusBarFrame.size.height;
     float originX = width / 2;
@@ -169,9 +172,11 @@ static NSString *kSettingsStartAnimation = @"animation";
     if (h == IPHONE_6_7_PLUS) {
          height = AVATAR_HEIGHT_IPHONE_6_7_PLUS;
     }
-    
+    if (h == IPHONE_X) {
+        height = AVATAR_HEIGHT_IPHONE_6_7_PLUS;
+    }
     float width = height;
-    float originX = [UIScreen mainScreen].bounds.size.width - width - [UIScreen mainScreen].bounds.size.width / 20;
+    float originX = [UIScreen mainScreen].bounds.size.width - width - [UIScreen mainScreen].bounds.size.width / 50;
     float originY = [UIApplication sharedApplication].statusBarFrame.size.height;
     self.avatarLayerView.frame = CGRectMake(originX, originY, width, height);
     self.avatarLayerView.layer.cornerRadius = self.avatarLayerView.frame.size.width / 2;

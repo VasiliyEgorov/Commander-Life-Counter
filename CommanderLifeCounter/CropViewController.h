@@ -31,7 +31,6 @@ extern NSString* const CropCroppedOriginalScaledUserInfoKey;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *scrollViewTrailingConstraint;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *scrollViewTopConstraint;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *scrollViewButtomConstraint;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *rotateButtonLayersBottomConstraint;
 @property (weak, nonatomic) IBOutlet UIView *buttonLayerView;
 @property (weak, nonatomic) IBOutlet UIButton *rotateButton;
 

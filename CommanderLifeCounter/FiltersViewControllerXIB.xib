@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -28,10 +29,10 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QTa-GQ-Ulm">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wK6-te-DeM">
-                            <rect key="frame" x="0.0" y="114" width="375" height="375"/>
+                            <rect key="frame" x="0.0" y="136" width="375" height="375"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="wK6-te-DeM" secondAttribute="height" multiplier="1:1" id="ghg-IE-qPP"/>
                             </constraints>
@@ -41,7 +42,7 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="0Sc-mw-kuf">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="178"/>
+                                    <rect key="frame" x="0.0" y="22" width="375" height="156"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="A0z-il-yxJ">
@@ -63,21 +64,23 @@
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="wK6-te-DeM" secondAttribute="trailing" id="Cji-z6-K5j"/>
                         <constraint firstItem="wK6-te-DeM" firstAttribute="leading" secondItem="QTa-GQ-Ulm" secondAttribute="leading" id="SOr-FD-KA2"/>
-                        <constraint firstItem="wK6-te-DeM" firstAttribute="top" secondItem="QTa-GQ-Ulm" secondAttribute="top" constant="114" id="cNC-Hd-8n9"/>
+                        <constraint firstItem="wK6-te-DeM" firstAttribute="centerX" secondItem="QTa-GQ-Ulm" secondAttribute="centerX" id="f4u-WT-3GJ"/>
+                        <constraint firstItem="wK6-te-DeM" firstAttribute="centerY" secondItem="QTa-GQ-Ulm" secondAttribute="centerY" id="s3r-rl-uGh"/>
                     </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="QTa-GQ-Ulm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="KJL-Oe-ufO"/>
-                <constraint firstItem="SWc-la-q4k" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Lg1-Be-GaO"/>
-                <constraint firstAttribute="trailing" secondItem="SWc-la-q4k" secondAttribute="trailing" id="NDt-Fk-O8h"/>
                 <constraint firstItem="SWc-la-q4k" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="RRF-Du-5Wl"/>
-                <constraint firstAttribute="bottom" secondItem="QTa-GQ-Ulm" secondAttribute="bottom" id="SwJ-aD-uiR"/>
-                <constraint firstItem="QTa-GQ-Ulm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="U5R-aW-cTp"/>
-                <constraint firstAttribute="trailing" secondItem="QTa-GQ-Ulm" secondAttribute="trailing" id="Xvi-sf-7ka"/>
+                <constraint firstItem="QTa-GQ-Ulm" firstAttribute="trailing" secondItem="CzH-5c-QKv" secondAttribute="trailing" id="YG9-x3-rvA"/>
                 <constraint firstAttribute="bottom" secondItem="SWc-la-q4k" secondAttribute="bottom" id="ceZ-Mv-Fle"/>
+                <constraint firstItem="QTa-GQ-Ulm" firstAttribute="leading" secondItem="CzH-5c-QKv" secondAttribute="leading" id="dBS-7r-36l"/>
+                <constraint firstItem="SWc-la-q4k" firstAttribute="trailing" secondItem="CzH-5c-QKv" secondAttribute="trailing" id="jsH-fa-i2G"/>
+                <constraint firstItem="SWc-la-q4k" firstAttribute="leading" secondItem="CzH-5c-QKv" secondAttribute="leading" id="lh9-Yv-qBe"/>
+                <constraint firstItem="QTa-GQ-Ulm" firstAttribute="top" secondItem="CzH-5c-QKv" secondAttribute="top" id="rgL-N5-PZD"/>
+                <constraint firstItem="CzH-5c-QKv" firstAttribute="bottom" secondItem="QTa-GQ-Ulm" secondAttribute="bottom" id="vXp-rH-fTn"/>
             </constraints>
+            <viewLayoutGuide key="safeArea" id="CzH-5c-QKv"/>
             <point key="canvasLocation" x="24.5" y="52.5"/>
         </view>
     </objects>

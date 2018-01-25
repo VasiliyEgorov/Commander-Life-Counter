@@ -15,9 +15,8 @@
 #import "NotesPaintViewController.h"
 #import "UIImage+Category.h"
 
-#define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0)
 #define OFFSET 6
-
+#define QUEUENAME "BG"
 
 static NSString *const keyboardAddButtonBottom = @"keyboardAddButtonBottom";
 static NSString *const keyboardOtherButtonsBottom = @"keyboardOtherButtonsBottom";
@@ -32,14 +31,14 @@ static NSString *const keyboardOtherButtonsBottom = @"keyboardOtherButtonsBottom
 @property (strong, nonatomic) UIButton *keyboardCloseButton;
 @property (strong, nonatomic) AlertViewData *alertViewData;
 @property (assign, nonatomic, getter=isSelected) BOOL selected;
-
+@property (nonatomic) dispatch_queue_t kConcurrent;
 @end
 
 @implementation EditNoteViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-  
+    self.kConcurrent = dispatch_queue_create(QUEUENAME, DISPATCH_QUEUE_CONCURRENT);
     [self controllerSettings];
     [self initObjects];
     [self initNotificationCenter];
@@ -234,13 +233,14 @@ static NSString *const keyboardOtherButtonsBottom = @"keyboardOtherButtonsBottom
     _noteDetails.noteString = [self.data splitTextForCell:textView.attributedText withNoteString:_noteDetails.noteString];
     _noteDetails.detailedString = [self.data splitTextForCell:textView.attributedText withDetailedString:_noteDetails.detailedString];
     [self saveContext];
+    _noteDetails.placeholderForCell = [self.data searchForImageInAttributedText:textView.attributedText];
+    _noteDetailsManagedObject.attributedText = textView.attributedText;
     
-    dispatch_async(kBgQueue, ^{
-        
-        _noteDetails.placeholderForCell = [self.data searchForImageInAttributedText:self.noteTextView.attributedText];
-        _noteDetailsManagedObject.attributedText = textView.attributedText;
+    dispatch_async(self.kConcurrent, ^{
         [self saveContextOnBackgroundThread];
     });
+    
+    
 }
 
 #pragma mark - AlertViewProtocol
@@ -259,7 +259,9 @@ static NSString *const keyboardOtherButtonsBottom = @"keyboardOtherButtonsBottom
 - (void) sendImageFromPicker:(UIImage*)image {
     UIImage *scaled = [UIImage scaleImage:image toFrame:self.noteTextView.frame];
     self.noteTextView.attributedText = [self.data placePhoto:scaled inTextView:self.noteTextView];
-    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.noteTextView becomeFirstResponder];
+    });
 }
 
 

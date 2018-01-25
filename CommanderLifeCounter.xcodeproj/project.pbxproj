@@ -100,6 +100,7 @@
 		FFDE60271F159B8500633E3C /* CustomNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDE60261F159B8500633E3C /* CustomNavController.m */; };
 		FFDE602D1F1727C400633E3C /* CustomMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDE602C1F1727C400633E3C /* CustomMenuCell.m */; };
 		FFDE60301F18214D00633E3C /* RollADieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDE602F1F18214D00633E3C /* RollADieViewController.m */; };
+		FFDF065020192D9D004E2D25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFDF064F20192D9D004E2D25 /* LaunchScreen.storyboard */; };
 		FFEAFAF71F56A1D700C0AFFC /* CameraData.m in Sources */ = {isa = PBXBuildFile; fileRef = FFEAFAF61F56A1D700C0AFFC /* CameraData.m */; };
 		FFEAFAFD1F5849DC00C0AFFC /* CropData.m in Sources */ = {isa = PBXBuildFile; fileRef = FFEAFAFC1F5849DC00C0AFFC /* CropData.m */; };
 		FFEAFB021F5968EC00C0AFFC /* StickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFEAFB011F5968EC00C0AFFC /* StickerView.m */; };
@@ -309,6 +310,7 @@
 		FFDE602C1F1727C400633E3C /* CustomMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomMenuCell.m; sourceTree = "<group>"; };
 		FFDE602E1F18214D00633E3C /* RollADieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RollADieViewController.h; sourceTree = "<group>"; };
 		FFDE602F1F18214D00633E3C /* RollADieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RollADieViewController.m; sourceTree = "<group>"; };
+		FFDF064F20192D9D004E2D25 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FFEAFAF51F56A1D700C0AFFC /* CameraData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraData.h; sourceTree = "<group>"; };
 		FFEAFAF61F56A1D700C0AFFC /* CameraData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraData.m; sourceTree = "<group>"; };
 		FFEAFAFB1F5849DC00C0AFFC /* CropData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CropData.h; sourceTree = "<group>"; };
@@ -398,6 +400,7 @@
 				FFEAFAFE1F59686F00C0AFFC /* Camera */,
 				FF6347161F7B0B1C004D67DE /* AvatarEdit */,
 				FF5954CC1E8731190036B013 /* Main.storyboard */,
+				FFDF064F20192D9D004E2D25 /* LaunchScreen.storyboard */,
 				FF5954D21E8731190036B013 /* Assets.xcassets */,
 				FF5954D71E8731190036B013 /* Info.plist */,
 				FF5954C31E8731190036B013 /* Supporting Files */,
@@ -765,6 +768,7 @@
 				FF537E631F635FFD009CA30E /* StickersViewControllerXIB.xib in Resources */,
 				FF63471E1F7BEF46004D67DE /* NotesPaintViewControllerXIB.xib in Resources */,
 				FF50D7551F528962005520A1 /* cameraXIB.xib in Resources */,
+				FFDF065020192D9D004E2D25 /* LaunchScreen.storyboard in Resources */,
 				FFEAFB071F59762B00C0AFFC /* StickerListXIB.xib in Resources */,
 				FF537E6D1F64F9AE009CA30E /* TextToolViewControllerXIB.xib in Resources */,
 				FF537EB61F67D245009CA30E /* FiltersCollectionViewCellXIB.xib in Resources */,
@@ -996,7 +1000,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 6R5CTCNFL9;
@@ -1014,7 +1017,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 6R5CTCNFL9;

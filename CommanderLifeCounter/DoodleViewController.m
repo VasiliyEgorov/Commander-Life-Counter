@@ -257,10 +257,16 @@ NSString* const DoodleSubviewsUserInfoKey = @"DoodleSubviewsUserInfoKey";
 
 - (void)addConstraintToButtonsLayerView:(UIView*)buttonsLayerView toAvatarImageView:(UIImageView*)avatarImageView andToLayerView:(UIView*)layerView {
     
+    CGFloat bottomConstant = -self.tabBarController.tabBar.frame.size.height - 1;
+    
+    if (@available(iOS 11.0, *)) {
+        bottomConstant = 0;
+    }
+    
     NSLayoutConstraint *top = [NSLayoutConstraint constraintWithItem:buttonsLayerView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:avatarImageView attribute:NSLayoutAttributeBottom multiplier:1 constant:0];
     NSLayoutConstraint *leading = [NSLayoutConstraint constraintWithItem:buttonsLayerView attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:layerView attribute:NSLayoutAttributeLeading multiplier:1 constant:0];
     NSLayoutConstraint *trailing = [NSLayoutConstraint constraintWithItem:buttonsLayerView attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:layerView attribute:NSLayoutAttributeTrailing multiplier:1 constant:0];
-    NSLayoutConstraint *bottom = [NSLayoutConstraint constraintWithItem:buttonsLayerView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:layerView attribute:NSLayoutAttributeBottom multiplier:1 constant:-self.tabBarController.tabBar.frame.size.height];
+    NSLayoutConstraint *bottom = [NSLayoutConstraint constraintWithItem:buttonsLayerView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:layerView attribute:NSLayoutAttributeBottom multiplier:1 constant:bottomConstant];
     
     [layerView addConstraint:top];
     [layerView addConstraint:leading];

@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -27,13 +28,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DK7-YL-PKh" customClass="CameraView">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                     <subviews>
                         <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kyP-uj-kDH">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="78.5"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGr-Os-wIJ">
-                                    <rect key="frame" x="315.5" y="28.5" width="43.5" height="43.5"/>
+                                    <rect key="frame" x="319.5" y="27" width="39.5" height="39.5"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="bGr-Os-wIJ" secondAttribute="height" multiplier="1:1" id="70T-al-ahf"/>
                                     </constraints>
@@ -43,7 +44,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9m-BR-dej">
-                                    <rect key="frame" x="270" y="28.5" width="22" height="43.5"/>
+                                    <rect key="frame" x="272" y="27" width="20" height="39.5"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="c9m-BR-dej" secondAttribute="height" multiplier="1:2" id="sUr-xq-duN"/>
                                     </constraints>
@@ -53,7 +54,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxr-qb-1Ec">
-                                    <rect key="frame" x="16" y="36" width="28.5" height="28.5"/>
+                                    <rect key="frame" x="16" y="35" width="23.5" height="23.5"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="fxr-qb-1Ec" secondAttribute="height" multiplier="1:1" id="uS8-ZZ-0Dq"/>
                                     </constraints>
@@ -65,19 +66,19 @@
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
-                                <constraint firstItem="c9m-BR-dej" firstAttribute="top" secondItem="kyP-uj-kDH" secondAttribute="top" constant="28.5" id="8Ra-qB-zbY"/>
+                                <constraint firstAttribute="bottom" secondItem="c9m-BR-dej" secondAttribute="bottom" constant="12" id="17W-Y5-Th8"/>
+                                <constraint firstItem="fxr-qb-1Ec" firstAttribute="height" secondItem="kyP-uj-kDH" secondAttribute="height" multiplier="0.3" id="4AN-XB-RKt"/>
                                 <constraint firstAttribute="trailing" secondItem="c9m-BR-dej" secondAttribute="trailing" constant="83" id="Bnc-Ai-DlU"/>
-                                <constraint firstItem="bGr-Os-wIJ" firstAttribute="top" secondItem="kyP-uj-kDH" secondAttribute="top" constant="28.5" id="GeD-lW-oOA"/>
-                                <constraint firstAttribute="bottom" secondItem="bGr-Os-wIJ" secondAttribute="bottom" constant="8" id="Gmr-sj-5Jd"/>
+                                <constraint firstItem="bGr-Os-wIJ" firstAttribute="height" secondItem="kyP-uj-kDH" secondAttribute="height" multiplier="0.5" id="C0F-SL-XKt"/>
+                                <constraint firstItem="fxr-qb-1Ec" firstAttribute="centerY" secondItem="c9m-BR-dej" secondAttribute="centerY" id="KSK-WJ-GVI"/>
                                 <constraint firstAttribute="trailing" secondItem="bGr-Os-wIJ" secondAttribute="trailing" constant="16" id="Mej-6f-BRI"/>
                                 <constraint firstItem="fxr-qb-1Ec" firstAttribute="leading" secondItem="kyP-uj-kDH" secondAttribute="leading" constant="16" id="Tk0-27-pHD"/>
-                                <constraint firstItem="fxr-qb-1Ec" firstAttribute="top" secondItem="kyP-uj-kDH" secondAttribute="top" constant="35.5" id="a7t-7Q-D3s"/>
-                                <constraint firstAttribute="bottom" secondItem="fxr-qb-1Ec" secondAttribute="bottom" constant="16" id="e65-wX-0VU"/>
-                                <constraint firstAttribute="bottom" secondItem="c9m-BR-dej" secondAttribute="bottom" constant="8" id="t5L-zD-89d"/>
+                                <constraint firstAttribute="bottom" secondItem="bGr-Os-wIJ" secondAttribute="bottom" constant="12" id="r6x-fN-9Oi"/>
+                                <constraint firstItem="c9m-BR-dej" firstAttribute="height" secondItem="kyP-uj-kDH" secondAttribute="height" multiplier="0.5" id="tcF-bE-UJA"/>
                             </constraints>
                         </view>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhX-rJ-UAq">
-                            <rect key="frame" x="143.5" y="560.5" width="87" height="86.5"/>
+                            <rect key="frame" x="144.5" y="542" width="85" height="85"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="jhX-rJ-UAq" secondAttribute="height" multiplier="1:1" id="8Rr-jp-EuF"/>
                             </constraints>
@@ -99,13 +100,14 @@
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstItem="DK7-YL-PKh" firstAttribute="top" secondItem="cBx-3L-2SF" secondAttribute="top" id="5Up-t5-wQ3"/>
                 <constraint firstItem="DK7-YL-PKh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Eqc-5z-9c0"/>
-                <constraint firstItem="DK7-YL-PKh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="HsX-sm-2MJ"/>
                 <constraint firstAttribute="trailing" secondItem="DK7-YL-PKh" secondAttribute="trailing" id="LHP-wP-5wI"/>
-                <constraint firstAttribute="bottom" secondItem="DK7-YL-PKh" secondAttribute="bottom" id="XFH-6U-HUR"/>
+                <constraint firstItem="cBx-3L-2SF" firstAttribute="bottom" secondItem="DK7-YL-PKh" secondAttribute="bottom" id="tD6-Zv-xa0"/>
             </constraints>
+            <viewLayoutGuide key="safeArea" id="cBx-3L-2SF"/>
             <point key="canvasLocation" x="26.5" y="52.5"/>
         </view>
     </objects>

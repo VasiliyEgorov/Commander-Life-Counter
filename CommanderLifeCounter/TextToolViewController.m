@@ -117,10 +117,16 @@ NSString* const TextSubviewsUserInfoKey = @"TextSubviewsUserInfoKey";
 
 - (void)addConstraintToTrashView:(UIView*)trashView toAvatarImageView:(UIImageView*)avatarImageView andToLayerView:(UIView*)layerView {
     
+    CGFloat bottomConstant = -self.tabBarController.tabBar.frame.size.height - 1;
+    
+    if (@available(iOS 11.0, *)) {
+        bottomConstant = 0;
+    }
+    
     NSLayoutConstraint *top = [NSLayoutConstraint constraintWithItem:trashView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:avatarImageView attribute:NSLayoutAttributeBottom multiplier:1 constant:1];
     NSLayoutConstraint *leading = [NSLayoutConstraint constraintWithItem:trashView attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:layerView attribute:NSLayoutAttributeLeading multiplier:1 constant:0];
     NSLayoutConstraint *trailing = [NSLayoutConstraint constraintWithItem:trashView attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:layerView attribute:NSLayoutAttributeTrailing multiplier:1 constant:0];
-    NSLayoutConstraint *bottom = [NSLayoutConstraint constraintWithItem:trashView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:layerView attribute:NSLayoutAttributeBottom multiplier:1 constant:-self.tabBarController.tabBar.frame.size.height - 1];
+    NSLayoutConstraint *bottom = [NSLayoutConstraint constraintWithItem:trashView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:layerView attribute:NSLayoutAttributeBottom multiplier:1 constant:bottomConstant];
     
     [layerView addConstraint:top];
     [layerView addConstraint:leading];

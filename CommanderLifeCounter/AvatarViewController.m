@@ -75,7 +75,6 @@
                     [self.indicator setHidden:YES];
                     [self.indicator stopAnimating];
                     self.editButton.hidden = NO;
-                    NSLog(@"%f %f", self.originalPhoto.size.width, self.originalPhoto.size.height);
                 }
             }];
 }

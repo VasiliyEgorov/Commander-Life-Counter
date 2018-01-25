@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -28,10 +29,10 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cTd-SB-uJL">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rUG-4U-Qab">
-                            <rect key="frame" x="0.0" y="114" width="375" height="375"/>
+                            <rect key="frame" x="0.0" y="136" width="375" height="375"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="rUG-4U-Qab" secondAttribute="height" multiplier="1:1" id="3rr-4K-vd1"/>
                             </constraints>
@@ -54,23 +55,25 @@
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstItem="rUG-4U-Qab" firstAttribute="top" secondItem="cTd-SB-uJL" secondAttribute="top" constant="114" id="cPk-Vu-LZZ"/>
-                        <constraint firstAttribute="trailing" secondItem="rUG-4U-Qab" secondAttribute="trailing" id="vK5-l2-atE"/>
-                        <constraint firstItem="rUG-4U-Qab" firstAttribute="leading" secondItem="cTd-SB-uJL" secondAttribute="leading" id="zdA-uy-cbu"/>
+                        <constraint firstAttribute="trailing" secondItem="rUG-4U-Qab" secondAttribute="trailing" id="7d9-Dw-1TL"/>
+                        <constraint firstItem="rUG-4U-Qab" firstAttribute="centerY" secondItem="cTd-SB-uJL" secondAttribute="centerY" id="JGY-Yc-e7O"/>
+                        <constraint firstItem="rUG-4U-Qab" firstAttribute="leading" secondItem="cTd-SB-uJL" secondAttribute="leading" id="Ps1-Iv-1Tz"/>
+                        <constraint firstItem="rUG-4U-Qab" firstAttribute="centerX" secondItem="cTd-SB-uJL" secondAttribute="centerX" id="qtY-LE-7D8"/>
                     </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="eBk-Ot-gMP" secondAttribute="trailing" id="8wr-Ug-xjr"/>
-                <constraint firstItem="eBk-Ot-gMP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Jr2-4r-je1"/>
-                <constraint firstAttribute="trailing" secondItem="cTd-SB-uJL" secondAttribute="trailing" id="NjM-Oz-Yxs"/>
+                <constraint firstItem="cTd-SB-uJL" firstAttribute="trailing" secondItem="5Td-I8-kOb" secondAttribute="trailing" id="E9P-gZ-J0s"/>
+                <constraint firstItem="5Td-I8-kOb" firstAttribute="bottom" secondItem="cTd-SB-uJL" secondAttribute="bottom" id="EsH-ol-g7X"/>
                 <constraint firstItem="eBk-Ot-gMP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="QKE-lQ-Mie"/>
-                <constraint firstAttribute="bottom" secondItem="cTd-SB-uJL" secondAttribute="bottom" id="WhJ-ga-tpe"/>
-                <constraint firstItem="cTd-SB-uJL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dPq-wH-yxG"/>
-                <constraint firstItem="cTd-SB-uJL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="hKT-J7-z1C"/>
+                <constraint firstItem="cTd-SB-uJL" firstAttribute="leading" secondItem="5Td-I8-kOb" secondAttribute="leading" id="Va5-9K-Bvw"/>
+                <constraint firstItem="cTd-SB-uJL" firstAttribute="top" secondItem="5Td-I8-kOb" secondAttribute="top" id="Yl5-zd-E42"/>
+                <constraint firstItem="eBk-Ot-gMP" firstAttribute="trailing" secondItem="5Td-I8-kOb" secondAttribute="trailing" id="dIq-XP-rj7"/>
+                <constraint firstItem="eBk-Ot-gMP" firstAttribute="leading" secondItem="5Td-I8-kOb" secondAttribute="leading" id="mLT-R4-mLL"/>
                 <constraint firstAttribute="bottom" secondItem="eBk-Ot-gMP" secondAttribute="bottom" id="mdO-K7-LD4"/>
             </constraints>
+            <viewLayoutGuide key="safeArea" id="5Td-I8-kOb"/>
             <point key="canvasLocation" x="24.5" y="52.5"/>
         </view>
     </objects>

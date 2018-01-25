@@ -16,7 +16,7 @@
 #import "StickerView.h"
 #import "DoodleView.h"
 #import "TextView.h"
-
+#import "Constants.h"
 
 #define IMAGEWIDTH_MORETHEN_HEIGHT self.avatarImageView.image.size.width > self.avatarImageView.image.size.height
 
@@ -40,7 +40,6 @@ NSString* const CropCroppedOriginalScaledUserInfoKey = @"CropCroppedOriginalScal
 @property (assign, nonatomic) CGFloat offsetY;
 @property (assign, nonatomic) CGRect *temp;
 
-
 @end
 
 @implementation CropViewController
@@ -59,6 +58,9 @@ NSString* const CropCroppedOriginalScaledUserInfoKey = @"CropCroppedOriginalScal
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(FilterToCropNotification:) name:FilterToCropNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(StickerToCropNotification:) name:StickerToCropNotification object:nil];
     
+    
+    [self addConstraintsToButtonsView:self.buttonLayerView andToScrollView:self.scrollView];
+    [self addConstraintsToButtonsView:self.rotateButton andToButton:self.buttonLayerView];
     [self configureScrollViewConstraintsDependsOnPhotoSize:self.originalPhoto];
     
     
@@ -104,7 +106,6 @@ NSString* const CropCroppedOriginalScaledUserInfoKey = @"CropCroppedOriginalScal
     [self.cropData updateDimViewsFrames:self.leftAvatarDimView rightDim:self.rightAvatarDimView depeningOnCropView:self.cropView andAvatarImageView:self.avatarImageView];
     
     [self scroll:self.scrollView toCropView:self.cropView];
-   
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -260,7 +261,6 @@ NSString* const CropCroppedOriginalScaledUserInfoKey = @"CropCroppedOriginalScal
 
 - (void) prepareSubviewsToSubview:(NSArray*)avatarImageView {
     
-
     for (UIView *view in avatarImageView) {
         if ([view isKindOfClass:[StickerView class]]) {
             StickerView *sticker = (StickerView*)view;
@@ -283,15 +283,12 @@ NSString* const CropCroppedOriginalScaledUserInfoKey = @"CropCroppedOriginalScal
             [self.avatarImageView addSubview:layerView];
             
         }
-
-        
         if ([view isKindOfClass:[DoodleView class]]) {
             
             view.frame = [self scaleView:view];
             [self.avatarImageView addSubview:view];
         }
-        
-        
+
     }
     
 }
@@ -349,11 +346,38 @@ NSString* const CropCroppedOriginalScaledUserInfoKey = @"CropCroppedOriginalScal
 
 #pragma mark - Constraints
 
+- (void) addConstraintsToButtonsView:(UIView*)buttonsView andToScrollView:(UIScrollView*) scrollView {
+    if (@available(iOS 11, *)) {
+        UILayoutGuide *guide = self.view.safeAreaLayoutGuide;
+        [buttonsView.leadingAnchor constraintEqualToAnchor:guide.leadingAnchor].active = YES;
+        [buttonsView.trailingAnchor constraintEqualToAnchor:guide.trailingAnchor].active = YES;
+        [buttonsView.bottomAnchor constraintEqualToAnchor:guide.bottomAnchor].active = YES;
+        [buttonsView.topAnchor constraintEqualToAnchor:scrollView.bottomAnchor].active = YES;
+    } else {
+        [buttonsView.topAnchor constraintEqualToAnchor:scrollView.bottomAnchor constant:0].active = YES;
+        [buttonsView.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor constant:0].active = YES;
+        [buttonsView.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor constant:0].active = YES;
+        [buttonsView.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor constant:-self.tabBarController.tabBar.frame.size.height].active = YES;
+        
+    }
+    buttonsView.translatesAutoresizingMaskIntoConstraints = NO;
+   
+}
+
+- (void) addConstraintsToButtonsView:(UIButton*)rotateButton andToButton:(UIView*) buttonsView {
+    
+    [rotateButton.centerXAnchor constraintEqualToAnchor:buttonsView.centerXAnchor].active = YES;
+    [rotateButton.centerYAnchor constraintEqualToAnchor:buttonsView.centerYAnchor].active = YES;
+    [rotateButton.heightAnchor constraintEqualToAnchor:buttonsView.heightAnchor multiplier:0.5].active = YES;
+    [rotateButton.widthAnchor constraintEqualToAnchor:rotateButton.heightAnchor multiplier:1/1].active = YES;
+    
+    rotateButton.translatesAutoresizingMaskIntoConstraints = NO;
+}
+
 - (void) configureScrollViewConstraintsDependsOnPhotoSize:(UIImage*) photo {
    
-     self.scrollViewTopConstraint.constant = self.navigationController.navigationBar.frame.size.height + [UIApplication sharedApplication].statusBarFrame.size.height;
-     self.rotateButtonLayersBottomConstraint.constant = self.tabBarController.tabBar.frame.size.height;
-    
+    self.scrollViewTopConstraint.constant = self.navigationController.navigationBar.frame.size.height + [UIApplication sharedApplication].statusBarFrame.size.height;
+
     CGFloat percentDeltaBetween3on4RatioWith16on9 = 43.75;
         
     if (photo.size.width < photo.size.height) {
@@ -383,6 +407,7 @@ NSString* const CropCroppedOriginalScaledUserInfoKey = @"CropCroppedOriginalScal
     
 
     [self.view updateConstraintsIfNeeded];
+    
 }
 
 
