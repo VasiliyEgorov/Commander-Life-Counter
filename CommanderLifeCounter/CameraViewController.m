@@ -13,8 +13,7 @@
 #import "Constants.h"
 #import "UIImage+Category.h"
 
-#define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0)
-
+#define QUEUENAME "Serial"
 
 typedef NS_ENUM (NSUInteger, AVCamSetupResult) {
     AVCamSetupResultSuccess,
@@ -43,7 +42,7 @@ typedef NS_ENUM (NSUInteger, FlashButtonType) {
 @property (assign, nonatomic) NSUInteger imageOrientation;
 @property (strong, nonatomic) AudioSessionData *audioData;
 @property (strong, nonatomic) CameraView *touchebleCameraView;
-
+@property (nonatomic) dispatch_queue_t kSerial;
 
 - (void)captureOutput:(AVCapturePhotoOutput *)output didFinishProcessingPhoto:(AVCapturePhoto *)photo error:(nullable NSError *)error NS_AVAILABLE_IOS(11);
 
@@ -54,6 +53,8 @@ typedef NS_ENUM (NSUInteger, FlashButtonType) {
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.kSerial = dispatch_queue_create(QUEUENAME, DISPATCH_QUEUE_SERIAL);
+    
     self.audioData = [[AudioSessionData alloc] init];
     self.audioData.delegate = self;
     
@@ -63,7 +64,8 @@ typedef NS_ENUM (NSUInteger, FlashButtonType) {
     self.cameraData.delegate = self;
 
     self.touchebleCameraView = (CameraView*)self.cameraView;
-    
+    [self.view layoutIfNeeded];
+    self.touchebleCameraView.restrictedRect = self.instrumentView.frame;
     
     [self makeSession];
    
@@ -479,7 +481,7 @@ typedef NS_ENUM (NSUInteger, FlashButtonType) {
 
     AVCaptureVideoOrientation videoPreviewLayerVideoOrientation = self.previewLayer.connection.videoOrientation;
     
-    dispatch_async(kBgQueue, ^{
+    dispatch_async(self.kSerial, ^{
         
         AVCaptureConnection *photoOutputConnection = [self.photoOutput connectionWithMediaType:AVMediaTypeVideo];
         photoOutputConnection.videoOrientation = videoPreviewLayerVideoOrientation;
@@ -589,7 +591,7 @@ typedef NS_ENUM (NSUInteger, FlashButtonType) {
     
     if (@available(iOS 10, *)) {
 
-    dispatch_async(kBgQueue, ^{
+    dispatch_async(self.kSerial, ^{
         
         if (self.isSessionRunning) {
             [self.session stopRunning];

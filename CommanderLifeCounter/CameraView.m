@@ -38,7 +38,9 @@
     CGFloat focusX = focusPoint.x/self.frame.size.width;
     CGFloat focusY = focusPoint.y/self.frame.size.height;
   
-    
+        if (CGRectContainsPoint(self.restrictedRect, focusPoint)) {
+            return;
+        }
  
     if (recognizer.state == UIGestureRecognizerStateEnded) {
     

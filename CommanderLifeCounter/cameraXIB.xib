@@ -18,6 +18,7 @@
                 <outlet property="changeCameraButton" destination="bGr-Os-wIJ" id="E3d-3o-wDL"/>
                 <outlet property="closeCameraButton" destination="fxr-qb-1Ec" id="VC9-t8-KnS"/>
                 <outlet property="flashlightButton" destination="c9m-BR-dej" id="Id4-7Y-z0e"/>
+                <outlet property="instrumentView" destination="kyP-uj-kDH" id="1Kl-P4-CEd"/>
                 <outlet property="takePhotoButton" destination="jhX-rJ-UAq" id="aME-Hm-RIr"/>
                 <outlet property="view" destination="iN0-l3-epB" id="3oG-mb-BtA"/>
             </connections>

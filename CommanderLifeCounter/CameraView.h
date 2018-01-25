@@ -13,7 +13,7 @@
 
 @interface CameraView : UIView
 
-
 @property (strong, nonatomic) AVCaptureDevice *captureDevice;
+@property (assign, nonatomic) CGRect restrictedRect;
 
 @end

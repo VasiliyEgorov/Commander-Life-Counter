@@ -24,6 +24,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *closeCameraButton;
 @property (weak, nonatomic) IBOutlet UIButton *flashlightButton;
 @property (weak, nonatomic) IBOutlet UIButton *changeCameraButton;
+@property (weak, nonatomic) IBOutlet UIView *instrumentView;
 
 
 
