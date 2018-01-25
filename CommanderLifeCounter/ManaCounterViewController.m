@@ -143,7 +143,7 @@
             self.fifthCounterLabel.text = [NSString stringWithFormat:@"%d", object.manaFifthCounter];
             self.sixthCounterLabel.text = [NSString stringWithFormat:@"%d", object.manaSixthCounter];
             self.seventhCounterLabel.text = [NSString stringWithFormat:@"%d", object.manaSeventhCounter];
-
+            self.eigthCounterLabel.text = [NSString stringWithFormat:@"%d", object.manaEightCounter];
 }
 
 
