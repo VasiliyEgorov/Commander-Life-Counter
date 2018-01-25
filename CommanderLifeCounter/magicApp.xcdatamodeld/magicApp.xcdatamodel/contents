@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13240" systemVersion="16G29" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="17C205" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
     <entity name="CardManagedObject" representedClassName="CardManagedObject" syncable="YES" codeGenerationType="class">
         <attribute name="cardColorIdentity" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="cardName" optional="YES" attributeType="String" syncable="YES"/>
@@ -22,6 +22,7 @@
         <attribute name="index" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
     </entity>
     <entity name="ManaCountersManagedObject" representedClassName="ManaCountersManagedObject" syncable="YES" codeGenerationType="class">
+        <attribute name="manaEightCounter" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="manaFifthCounter" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="manaFirstCounter" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="manaFourthCounter" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
@@ -85,7 +86,7 @@
         <element name="CardManagedObject" positionX="504" positionY="189" width="128" height="223"/>
         <element name="CardSearchStringManagedObject" positionX="504" positionY="422" width="128" height="73"/>
         <element name="CountersIndexManagedObject" positionX="99" positionY="380" width="128" height="58"/>
-        <element name="ManaCountersManagedObject" positionX="-162" positionY="225" width="128" height="163"/>
+        <element name="ManaCountersManagedObject" positionX="-162" positionY="225" width="128" height="178"/>
         <element name="NoteDetailsManagedObject" positionX="693" positionY="71" width="128" height="88"/>
         <element name="NoteManagedObject" positionX="504" positionY="45" width="128" height="133"/>
         <element name="OpponentManagedObject" positionX="135" positionY="-27" width="128" height="148"/>

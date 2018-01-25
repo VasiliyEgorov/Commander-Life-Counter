@@ -784,46 +784,52 @@
                                         <rect key="frame" x="0.0" y="0.0" width="367" height="396"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="13i-wn-DZw">
-                                        <rect key="frame" x="1" y="10" width="36.5" height="376"/>
+                                        <rect key="frame" x="1" y="10" width="29.5" height="376"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun_35" translatesAutoresizingMaskIntoConstraints="NO" id="wp5-0l-40F">
-                                                <rect key="frame" x="0.0" y="0.0" width="36.5" height="36.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="29.5" height="29.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="wp5-0l-40F" secondAttribute="height" multiplier="1:1" id="QOq-d2-2BF"/>
                                                 </constraints>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="water_35" translatesAutoresizingMaskIntoConstraints="NO" id="XuO-KX-JpG">
-                                                <rect key="frame" x="0.0" y="56.5" width="36.5" height="36.5"/>
+                                                <rect key="frame" x="0.0" y="49.5" width="29.5" height="29.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="XuO-KX-JpG" secondAttribute="height" multiplier="1:1" id="vDs-JO-084"/>
                                                 </constraints>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="skull_35" translatesAutoresizingMaskIntoConstraints="NO" id="Y17-9V-v3w">
-                                                <rect key="frame" x="0.0" y="113" width="36.5" height="36.5"/>
+                                                <rect key="frame" x="0.0" y="99" width="29.5" height="29.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Y17-9V-v3w" secondAttribute="height" multiplier="1:1" id="j3o-93-zsL"/>
                                                 </constraints>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fire_35" translatesAutoresizingMaskIntoConstraints="NO" id="yB0-2H-9Xy">
-                                                <rect key="frame" x="0.0" y="169.5" width="36.5" height="37"/>
+                                                <rect key="frame" x="0.0" y="148.5" width="29.5" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="yB0-2H-9Xy" secondAttribute="height" multiplier="1:1" id="LkB-wk-PeS"/>
                                                 </constraints>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tree_35" translatesAutoresizingMaskIntoConstraints="NO" id="a4H-nS-Pmw">
-                                                <rect key="frame" x="0.0" y="226.5" width="36.5" height="36.5"/>
+                                                <rect key="frame" x="0.0" y="198.5" width="29.5" height="29"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="a4H-nS-Pmw" secondAttribute="height" multiplier="1:1" id="CO4-CP-khy"/>
                                                 </constraints>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diamond_35" translatesAutoresizingMaskIntoConstraints="NO" id="TUG-CX-L5E">
-                                                <rect key="frame" x="0.0" y="283" width="36.5" height="36.5"/>
+                                                <rect key="frame" x="0.0" y="247.5" width="29.5" height="29.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="TUG-CX-L5E" secondAttribute="height" multiplier="1:1" id="lwd-Uy-Uaj"/>
                                                 </constraints>
                                             </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="storm" translatesAutoresizingMaskIntoConstraints="NO" id="pge-dA-Gbf">
+                                                <rect key="frame" x="0.0" y="297" width="29.5" height="29.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="pge-dA-Gbf" secondAttribute="height" multiplier="1:1" id="YDF-Fc-GoA"/>
+                                                </constraints>
+                                            </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mountains" translatesAutoresizingMaskIntoConstraints="NO" id="uw9-EI-pdG">
-                                                <rect key="frame" x="0.0" y="339.5" width="36.5" height="36.5"/>
+                                                <rect key="frame" x="0.0" y="346.5" width="29.5" height="29.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="uw9-EI-pdG" secondAttribute="height" multiplier="1:1" id="cGl-fJ-KZB"/>
                                                 </constraints>
@@ -831,13 +837,13 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="YGC-cp-Cxy">
-                                        <rect key="frame" x="46.5" y="10" width="267.5" height="376"/>
+                                        <rect key="frame" x="47.5" y="10" width="266.5" height="376"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="mVB-iW-vFP">
-                                                <rect key="frame" x="0.0" y="0.0" width="267.5" height="36.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="266.5" height="29.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kUf-sA-r0r" customClass="CustomButtonMainCounters">
-                                                        <rect key="frame" x="0.0" y="0.0" width="36.5" height="36.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="29.5" height="29.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="kUf-sA-r0r" secondAttribute="height" multiplier="1:1" id="2df-jw-TPy"/>
                                                         </constraints>
@@ -847,13 +853,13 @@
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="llZ-kG-14X" customClass="CustomLabelForManaCounters">
-                                                        <rect key="frame" x="116" y="0.0" width="36" height="36.5"/>
+                                                        <rect key="frame" x="115.5" y="0.0" width="36" height="29.5"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="32"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3rW-74-qaH" customClass="CustomButtonMainCounters">
-                                                        <rect key="frame" x="231" y="0.0" width="36.5" height="36.5"/>
+                                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3rW-74-qaH" customClass="CustomButtonMainCounters">
+                                                        <rect key="frame" x="237" y="0.0" width="29.5" height="29.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="3rW-74-qaH" secondAttribute="height" multiplier="1:1" id="syE-90-Pdf"/>
                                                         </constraints>
@@ -865,10 +871,10 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="89C-1o-DKe">
-                                                <rect key="frame" x="0.0" y="56.5" width="267.5" height="36.5"/>
+                                                <rect key="frame" x="0.0" y="49.5" width="266.5" height="29.5"/>
                                                 <subviews>
                                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dO3-vP-vV1" customClass="CustomButtonMainCounters">
-                                                        <rect key="frame" x="0.0" y="0.0" width="36.5" height="36.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="29.5" height="29.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="dO3-vP-vV1" secondAttribute="height" multiplier="1:1" id="Y7g-0a-cen"/>
                                                         </constraints>
@@ -878,13 +884,13 @@
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="isD-sk-Him" customClass="CustomLabelForManaCounters">
-                                                        <rect key="frame" x="36.5" y="0.0" width="195" height="36.5"/>
+                                                        <rect key="frame" x="29.5" y="0.0" width="208" height="29.5"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="32"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UpL-tF-l4B" customClass="CustomButtonMainCounters">
-                                                        <rect key="frame" x="231.5" y="0.0" width="36" height="36.5"/>
+                                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UpL-tF-l4B" customClass="CustomButtonMainCounters">
+                                                        <rect key="frame" x="237.5" y="0.0" width="29" height="29.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="UpL-tF-l4B" secondAttribute="height" multiplier="1:1" id="NL8-L9-EFc"/>
                                                         </constraints>
@@ -896,10 +902,10 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a6x-Vz-ZVX">
-                                                <rect key="frame" x="0.0" y="113" width="267.5" height="36.5"/>
+                                                <rect key="frame" x="0.0" y="99" width="266.5" height="29.5"/>
                                                 <subviews>
                                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ORi-R7-Ybn" customClass="CustomButtonMainCounters">
-                                                        <rect key="frame" x="0.0" y="0.0" width="36.5" height="36.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="29.5" height="29.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="ORi-R7-Ybn" secondAttribute="height" multiplier="1:1" id="nTn-o1-82b"/>
                                                         </constraints>
@@ -909,13 +915,13 @@
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nb0-ul-QVq" customClass="CustomLabelForManaCounters">
-                                                        <rect key="frame" x="36.5" y="0.0" width="194.5" height="36.5"/>
+                                                        <rect key="frame" x="29.5" y="0.0" width="207.5" height="29.5"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="32"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KyK-Wp-W39" customClass="CustomButtonMainCounters">
-                                                        <rect key="frame" x="231" y="0.0" width="36.5" height="36.5"/>
+                                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KyK-Wp-W39" customClass="CustomButtonMainCounters">
+                                                        <rect key="frame" x="237" y="0.0" width="29.5" height="29.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="KyK-Wp-W39" secondAttribute="height" multiplier="1:1" id="JSM-PV-pZc"/>
                                                         </constraints>
@@ -927,10 +933,10 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gIv-ol-ZLX">
-                                                <rect key="frame" x="0.0" y="169.5" width="267.5" height="37"/>
+                                                <rect key="frame" x="0.0" y="148.5" width="266.5" height="30"/>
                                                 <subviews>
                                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GhE-Cn-dMj" customClass="CustomButtonMainCounters">
-                                                        <rect key="frame" x="0.0" y="0.0" width="36.5" height="37"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="29.5" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="GhE-Cn-dMj" secondAttribute="height" multiplier="1:1" id="lNz-AC-IEm"/>
                                                         </constraints>
@@ -940,13 +946,13 @@
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="15C-hZ-Stg" customClass="CustomLabelForManaCounters">
-                                                        <rect key="frame" x="36.5" y="0.0" width="194.5" height="37"/>
+                                                        <rect key="frame" x="29.5" y="0.0" width="207.5" height="30"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="32"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nnt-dC-Tbu" customClass="CustomButtonMainCounters">
-                                                        <rect key="frame" x="231" y="0.0" width="36.5" height="37"/>
+                                                    <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nnt-dC-Tbu" customClass="CustomButtonMainCounters">
+                                                        <rect key="frame" x="237" y="0.0" width="29.5" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="Nnt-dC-Tbu" secondAttribute="height" multiplier="1:1" id="ZVK-Vp-ywM"/>
                                                         </constraints>
@@ -958,10 +964,10 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lAP-bd-pLn">
-                                                <rect key="frame" x="0.0" y="226.5" width="267.5" height="36.5"/>
+                                                <rect key="frame" x="0.0" y="198.5" width="266.5" height="29"/>
                                                 <subviews>
                                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ECy-xW-7mM" customClass="CustomButtonMainCounters">
-                                                        <rect key="frame" x="0.0" y="0.0" width="36.5" height="36.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="29.5" height="29"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="ECy-xW-7mM" secondAttribute="height" multiplier="1:1" id="yZT-Df-8If"/>
                                                         </constraints>
@@ -971,13 +977,13 @@
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVv-Sr-Ohv" customClass="CustomLabelForManaCounters">
-                                                        <rect key="frame" x="36.5" y="0.0" width="194.5" height="36.5"/>
+                                                        <rect key="frame" x="29.5" y="0.0" width="207.5" height="29"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="32"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fiU-Bd-9Hs" customClass="CustomButtonMainCounters">
-                                                        <rect key="frame" x="231" y="0.0" width="36.5" height="36.5"/>
+                                                    <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fiU-Bd-9Hs" customClass="CustomButtonMainCounters">
+                                                        <rect key="frame" x="237" y="0.0" width="29.5" height="29"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="fiU-Bd-9Hs" secondAttribute="height" multiplier="1:1" id="53V-Nj-9ag"/>
                                                         </constraints>
@@ -989,10 +995,10 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QEY-Rm-sEX">
-                                                <rect key="frame" x="0.0" y="283" width="267.5" height="36.5"/>
+                                                <rect key="frame" x="0.0" y="247.5" width="266.5" height="29.5"/>
                                                 <subviews>
                                                     <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="joP-Xp-YPt" customClass="CustomButtonMainCounters">
-                                                        <rect key="frame" x="0.0" y="0.0" width="36.5" height="36.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="29.5" height="29.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="joP-Xp-YPt" secondAttribute="height" multiplier="1:1" id="P2U-hQ-4E2"/>
                                                         </constraints>
@@ -1002,13 +1008,13 @@
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="311-eB-cZk" customClass="CustomLabelForManaCounters">
-                                                        <rect key="frame" x="36.5" y="0.0" width="194.5" height="36.5"/>
+                                                        <rect key="frame" x="29.5" y="0.0" width="207.5" height="29.5"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="32"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FH7-CW-TEd" customClass="CustomButtonMainCounters">
-                                                        <rect key="frame" x="231" y="0.0" width="36.5" height="36.5"/>
+                                                    <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FH7-CW-TEd" customClass="CustomButtonMainCounters">
+                                                        <rect key="frame" x="237" y="0.0" width="29.5" height="29.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="FH7-CW-TEd" secondAttribute="height" multiplier="1:1" id="a1c-Il-hfV"/>
                                                         </constraints>
@@ -1019,11 +1025,42 @@
                                                     </button>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vjw-vR-HeY">
-                                                <rect key="frame" x="0.0" y="339.5" width="267.5" height="36.5"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KU6-ms-yv9">
+                                                <rect key="frame" x="0.0" y="297" width="266.5" height="29.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lmu-zd-F2F" customClass="CustomButtonMainCounters">
-                                                        <rect key="frame" x="0.0" y="0.0" width="36.5" height="36.5"/>
+                                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWS-uY-UAg" customClass="CustomButtonMainCounters">
+                                                        <rect key="frame" x="0.0" y="0.0" width="29.5" height="29.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="aWS-uY-UAg" secondAttribute="height" multiplier="1:1" id="Qis-Bs-RV7"/>
+                                                        </constraints>
+                                                        <state key="normal" backgroundImage="btnplus_35"/>
+                                                        <connections>
+                                                            <action selector="counterButtons:" destination="Mka-e7-rPj" eventType="touchUpInside" id="Jji-WM-kf7"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uSO-ma-msZ" customClass="CustomLabelForManaCounters">
+                                                        <rect key="frame" x="29.5" y="0.0" width="208" height="29.5"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="32"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FOH-gD-XOJ" customClass="CustomButtonMainCounters">
+                                                        <rect key="frame" x="237.5" y="0.0" width="29" height="29.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="FOH-gD-XOJ" secondAttribute="height" multiplier="1:1" id="aNb-vB-icg"/>
+                                                        </constraints>
+                                                        <state key="normal" backgroundImage="btnminus_35"/>
+                                                        <connections>
+                                                            <action selector="counterButtons:" destination="Mka-e7-rPj" eventType="touchUpInside" id="C0V-mL-UlL"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vjw-vR-HeY">
+                                                <rect key="frame" x="0.0" y="346.5" width="266.5" height="29.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lmu-zd-F2F" customClass="CustomButtonMainCounters">
+                                                        <rect key="frame" x="0.0" y="0.0" width="29.5" height="29.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="Lmu-zd-F2F" secondAttribute="height" multiplier="1:1" id="RoD-BI-fpr"/>
                                                         </constraints>
@@ -1033,13 +1070,13 @@
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edR-FT-lec" customClass="CustomLabelForManaCounters">
-                                                        <rect key="frame" x="36.5" y="0.0" width="194.5" height="36.5"/>
+                                                        <rect key="frame" x="29.5" y="0.0" width="207.5" height="29.5"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="32"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pnQ-il-P5C" customClass="CustomButtonMainCounters">
-                                                        <rect key="frame" x="231" y="0.0" width="36.5" height="36.5"/>
+                                                    <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pnQ-il-P5C" customClass="CustomButtonMainCounters">
+                                                        <rect key="frame" x="237" y="0.0" width="29.5" height="29.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="pnQ-il-P5C" secondAttribute="height" multiplier="1:1" id="3VL-wG-Tn6"/>
                                                         </constraints>
@@ -1052,6 +1089,7 @@
                                             </stackView>
                                         </subviews>
                                         <constraints>
+                                            <constraint firstItem="KU6-ms-yv9" firstAttribute="height" secondItem="mVB-iW-vFP" secondAttribute="height" priority="999" id="DDQ-aP-gVK"/>
                                             <constraint firstItem="mVB-iW-vFP" firstAttribute="height" secondItem="gIv-ol-ZLX" secondAttribute="height" priority="999" id="UH0-Hr-bBt"/>
                                             <constraint firstItem="mVB-iW-vFP" firstAttribute="height" secondItem="QEY-Rm-sEX" secondAttribute="height" priority="999" id="Uan-Xy-IMe"/>
                                             <constraint firstItem="mVB-iW-vFP" firstAttribute="height" secondItem="vjw-vR-HeY" secondAttribute="height" priority="999" id="XCP-qc-LaO"/>
@@ -1068,7 +1106,7 @@
                                     <constraint firstAttribute="bottom" secondItem="Vcf-mW-5Tl" secondAttribute="bottom" id="PPi-zj-wWI"/>
                                     <constraint firstItem="YGC-cp-Cxy" firstAttribute="top" secondItem="6dQ-a5-CN9" secondAttribute="top" constant="10" id="Qua-eL-iv7"/>
                                     <constraint firstAttribute="trailing" secondItem="Vcf-mW-5Tl" secondAttribute="trailing" id="RB0-2i-nTb"/>
-                                    <constraint firstItem="YGC-cp-Cxy" firstAttribute="leading" secondItem="13i-wn-DZw" secondAttribute="trailing" constant="9" id="SBl-2a-tdE"/>
+                                    <constraint firstItem="YGC-cp-Cxy" firstAttribute="leading" secondItem="13i-wn-DZw" secondAttribute="trailing" constant="17" id="SBl-2a-tdE"/>
                                     <constraint firstItem="13i-wn-DZw" firstAttribute="top" secondItem="6dQ-a5-CN9" secondAttribute="top" constant="10" id="Wmb-76-5zK"/>
                                     <constraint firstItem="Vcf-mW-5Tl" firstAttribute="top" secondItem="6dQ-a5-CN9" secondAttribute="top" id="dnI-OH-N3U"/>
                                     <constraint firstItem="13i-wn-DZw" firstAttribute="leading" secondItem="6dQ-a5-CN9" secondAttribute="leading" constant="1" id="fcG-Kx-upY"/>
@@ -1123,13 +1161,14 @@
                         <outlet property="btnTopConstraint" destination="RP4-I1-CYv" id="0VR-hD-r53"/>
                         <outlet property="countersViewBottomToLayoutMarginContraint" destination="MUK-XD-A61" id="9vg-Hr-lLe"/>
                         <outlet property="countersViewLeadingConstraint" destination="SBl-2a-tdE" id="F6a-sv-OpO"/>
-                        <outlet property="fifthCounterLabel" destination="PVv-Sr-Ohv" id="ONj-hV-eKE"/>
-                        <outlet property="firstCounterLabel" destination="llZ-kG-14X" id="k9E-ot-ZGX"/>
-                        <outlet property="fourthCounterLabel" destination="15C-hZ-Stg" id="LVk-c8-B2x"/>
-                        <outlet property="secondCounterLabel" destination="isD-sk-Him" id="bTA-Ph-cMs"/>
-                        <outlet property="seventhCounterLabel" destination="edR-FT-lec" id="9wI-0T-Kbh"/>
-                        <outlet property="sixthCounterLabel" destination="311-eB-cZk" id="mu7-iE-pUe"/>
-                        <outlet property="thirdCounterLabel" destination="Nb0-ul-QVq" id="SSr-CP-80S"/>
+                        <outlet property="eigthCounterLabel" destination="edR-FT-lec" id="bAi-Dn-cca"/>
+                        <outlet property="fifthCounterLabel" destination="PVv-Sr-Ohv" id="rto-te-Ga3"/>
+                        <outlet property="firstCounterLabel" destination="llZ-kG-14X" id="3hG-9h-iKY"/>
+                        <outlet property="fourthCounterLabel" destination="15C-hZ-Stg" id="s6C-Fk-X4u"/>
+                        <outlet property="secondCounterLabel" destination="isD-sk-Him" id="doi-ld-lYg"/>
+                        <outlet property="seventhCounterLabel" destination="uSO-ma-msZ" id="W8n-Jv-Xe4"/>
+                        <outlet property="sixthCounterLabel" destination="311-eB-cZk" id="SO8-vV-6L6"/>
+                        <outlet property="thirdCounterLabel" destination="Nb0-ul-QVq" id="pfr-oc-Mrz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XAI-13-L4b" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2151,6 +2190,7 @@
         <image name="refreshButton" width="28" height="25"/>
         <image name="skull_35" width="40" height="40"/>
         <image name="skull_roll" width="60" height="60"/>
+        <image name="storm" width="126" height="124"/>
         <image name="sun_35" width="40" height="40"/>
         <image name="sun_roll" width="60" height="60"/>
         <image name="tails" width="134" height="100"/>

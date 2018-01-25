@@ -141,27 +141,31 @@
                 self.player.counters.manaCounter.manaSeventhCounter = self.player.counters.manaCounter.manaSeventhCounter + 1;
                 break;
             case ManaButtonEight:
-                self.player.counters.manaCounter.manaFirstCounter = [self countDownWithFilter:self.player.counters.manaCounter.manaFirstCounter sender:sender];
+                self.player.counters.manaCounter.manaEightCounter = self.player.counters.manaCounter.manaEightCounter + 1;
                 break;
             case ManaButtonNine:
-                self.player.counters.manaCounter.manaSecondCounter = [self countDownWithFilter:self.player.counters.manaCounter.manaSecondCounter sender:sender];
+                self.player.counters.manaCounter.manaFirstCounter = [self countDownWithFilter:self.player.counters.manaCounter.manaFirstCounter sender:sender];
                 break;
             case ManaButtonTen:
-                self.player.counters.manaCounter.manaThirdCounter = [self countDownWithFilter:self.player.counters.manaCounter.manaThirdCounter sender:sender];
+                self.player.counters.manaCounter.manaSecondCounter = [self countDownWithFilter:self.player.counters.manaCounter.manaSecondCounter sender:sender];
                 break;
             case ManaButtonEleven:
-                self.player.counters.manaCounter.manaFourthCounter = [self countDownWithFilter:self.player.counters.manaCounter.manaFourthCounter sender:sender];
+                self.player.counters.manaCounter.manaThirdCounter = [self countDownWithFilter:self.player.counters.manaCounter.manaThirdCounter sender:sender];
                 break;
             case ManaButtonTwelve:
-                self.player.counters.manaCounter.manaFifthCounter = [self countDownWithFilter:self.player.counters.manaCounter.manaFifthCounter sender:sender];
+                self.player.counters.manaCounter.manaFourthCounter = [self countDownWithFilter:self.player.counters.manaCounter.manaFourthCounter sender:sender];
                 break;
             case ManaButtonThirteen:
-                self.player.counters.manaCounter.manaSixthCounter = [self countDownWithFilter:self.player.counters.manaCounter.manaSixthCounter sender:sender];
+                self.player.counters.manaCounter.manaFifthCounter = [self countDownWithFilter:self.player.counters.manaCounter.manaFifthCounter sender:sender];
                 break;
             case ManaButtonFourteen:
+                self.player.counters.manaCounter.manaSixthCounter = [self countDownWithFilter:self.player.counters.manaCounter.manaSixthCounter sender:sender];
+                break;
+            case ManaButtonFifteen:
                 self.player.counters.manaCounter.manaSeventhCounter = [self countDownWithFilter:self.player.counters.manaCounter.manaSeventhCounter sender:sender];
                 break;
-                
+            case ManaButtonSixteen:
+                self.player.counters.manaCounter.manaEightCounter = [self countDownWithFilter:self.player.counters.manaCounter.manaEightCounter sender:sender];
             default:
                 break;
     }

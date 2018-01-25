@@ -23,7 +23,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *fifthCounterLabel;
 @property (weak, nonatomic) IBOutlet UILabel *sixthCounterLabel;
 @property (weak, nonatomic) IBOutlet UILabel *seventhCounterLabel;
-
+@property (weak, nonatomic) IBOutlet UILabel *eigthCounterLabel;
 
 - (IBAction)counterButtons:(UIButton *)sender;
 - (IBAction)changeCounterAction:(UIButton *)sender;

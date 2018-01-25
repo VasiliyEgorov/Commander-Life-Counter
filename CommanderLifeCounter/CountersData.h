@@ -29,6 +29,8 @@ typedef enum : NSUInteger {
     ManaButtonTwelve = 11,
     ManaButtonThirteen = 12,
     ManaButtonFourteen = 13,
+    ManaButtonFifteen = 14,
+    ManaButtonSixteen = 15
 } ManaCountersButtonTags;
 
 typedef enum : NSUInteger {
