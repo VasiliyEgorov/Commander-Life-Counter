@@ -54,11 +54,6 @@ static NSString *const keyboardOtherButtonsBottom = @"keyboardOtherButtonsBottom
     // Dispose of any resources that can be recreated.
 }
 
-- (void)viewWillDisappear:(BOOL)animated {
-    [super viewWillDisappear:YES];
-   
-}
-
 - (void) viewDidAppear:(BOOL)animated {
     [super viewDidAppear:YES];
     
