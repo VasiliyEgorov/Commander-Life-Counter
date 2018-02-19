@@ -11,3 +11,6 @@ Up to four expandeble rows for each player. Every player can rename the rows
 </br>
 ![rows](https://media.giphy.com/media/fWgwMgkpGGQzF0CrCU/giphy.gif)
 </br>
+Notes with paint and camera attachments. Every paitings will be cropped
+</br>
+![notes](https://media.giphy.com/media/PoJOkVwwlLyR2u1OEp/giphy.gif)
