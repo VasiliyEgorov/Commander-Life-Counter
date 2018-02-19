@@ -1,7 +1,7 @@
 # Commander-Life-Counter
 ## Life Counter for MTG players 
 
-## Features
+ Features
 </br>
 Random avatars depending on your name
 </br>
@@ -23,13 +23,13 @@ All camera and library editing features together
 </br>
 ![allTogether](https://media.giphy.com/media/1nbtPNHTZ7HK9yN2gl/giphy.gif)
 </br>
-## That app got avatars support from custom live camera and your library
+ That app got avatars support from custom live camera and your library
 </br>
-## Crop
+ Crop
 </br>
 ![crop](https://media.giphy.com/media/2fq4y3DDzzHxQrroVt/giphy.gif)
 </br>
-## Stickers
+ Stickers
 </br>
 ![stickers](https://media.giphy.com/media/yNOE4Ah7HRou7LD2kn/giphy.gif)
 </br>
