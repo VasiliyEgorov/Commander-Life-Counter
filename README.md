@@ -22,8 +22,7 @@ all other features in that app made by Vasiliy Egorov
 
 ## App features in Gif
 
-</br>
-### Random avatars depending on your name
+## Random avatars depending on your name
 </br>
 
 ![playerName](https://media.giphy.com/media/l378k8bdzUanpWqKk/giphy.gif)
@@ -44,7 +43,6 @@ all other features in that app made by Vasiliy Egorov
 ![search](https://media.giphy.com/media/2lYPJWbN1DwJXQ9quh/giphy.gif)
 </br>
  ## That app got avatars support from custom live camera and your library
-</br>
 
  ### Crop
 </br>
@@ -77,5 +75,5 @@ all other features in that app made by Vasiliy Egorov
 ![allTogether](https://media.giphy.com/media/1nbtPNHTZ7HK9yN2gl/giphy.gif)
 </br>
 
-
+## Licence
 
