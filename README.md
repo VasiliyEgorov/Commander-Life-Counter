@@ -12,7 +12,15 @@ supports all iPhone models
 
 ## Features
 
-
+- Up to four rows for each player
+- Customizable player names
+- Additional land drop counter for mana
+- Avatars. You can make one by camera or set from library 
+- All data stores until you reset it, no need to enter player, counter names every time
+- Reset counter function for each player counter
+- Reset all counters function
+- Smart card search with search suggestions, search history, card legalities, pictures, text, set, rarity, type
+- Notes with attachable pictures from your camera or library
 
 ## Frameworks used
 
