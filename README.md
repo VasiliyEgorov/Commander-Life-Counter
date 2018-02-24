@@ -43,7 +43,7 @@ all other features in that app made by Vasiliy Egorov
 
 ![search](https://media.giphy.com/media/2lYPJWbN1DwJXQ9quh/giphy.gif)
 </br>
- ### That app got avatars support from custom live camera and your library
+ ## That app got avatars support from custom live camera and your library
 </br>
 
  ### Crop
