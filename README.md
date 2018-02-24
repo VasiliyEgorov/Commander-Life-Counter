@@ -2,31 +2,30 @@
 
 ## Overview
 
-Objective-c version designed by MVC pattern
+**Objective-c** version designed by MVC pattern
 
-minimum iOS version - 10.0
+minimum iOS version - **10.0**
 
 supports all iPhone models
 
-[here](https://github.com/VasiliyEgorov/CommanderAppSwift) is Swift version designed by MVVM pattern
+[here](https://github.com/VasiliyEgorov/CommanderAppSwift) is **Swift** version designed by MVVM pattern
 
 ## Features
 
 - Up to four rows for each player
 - Customizable player names
 - Additional land drop counter for mana
-- Avatars. You can make one by camera or set from library 
-- All data stores until you reset it, no need to enter player, counter names every time
+- Avatars. You can make one by camera or set from library. **Custom camera support**
+- All data stores until you reset it, no need to enter player, counter names every time **(Coredata)**
 - Reset counter function for each player counter
 - Reset all counters function
-- Smart card search with search suggestions, search history, card legalities, pictures, text, set, rarity, type
-- Notes with attachable pictures from your camera or library
+- **Smart card search with search suggestions, search history, card legalities, pictures, text, set, rarity, type**
+- Notes with attachable pictures from your camera or library and hand drawings
 
 ## Frameworks used
 
-AFNetworking
-
-all other features in that app made by Vasiliy Egorov
+- AFNetworking
+- All other features in that app made by **Vasiliy Egorov**
 
 ## App features in Gif
 
