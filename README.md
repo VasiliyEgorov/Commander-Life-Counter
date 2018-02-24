@@ -8,7 +8,7 @@ minimum iOS version - 10.0
 
 supports all iPhone models
 
-here is Swift version designed by MVVM pattern
+[here](https://github.com/VasiliyEgorov/CommanderAppSwift) is Swift version designed by MVVM pattern
 
 ## Features
 
