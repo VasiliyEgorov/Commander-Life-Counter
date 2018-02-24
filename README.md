@@ -1,6 +1,6 @@
 # Commander-Life-Counter for MTG players
 
-## Features
+## Overview
 
 Objective-c version designed by MVC pattern
 
@@ -10,13 +10,17 @@ supports all iPhone models
 
 here is Swift version designed by MVVM pattern
 
+## Features
+
+
+
 ### Frameworks used
 
 AFNetworking
 
 all other features in that app made by Vasiliy Egorov
 
-Take a look at the app
+## App features in Gif
 
 </br>
 Random avatars depending on your name
