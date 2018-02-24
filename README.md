@@ -22,7 +22,7 @@ all other features in that app made by Vasiliy Egorov
 
 ## App features in Gif
 
-## Random avatars depending on your name
+### Random avatars depending on your name
 </br>
 
 ![playerName](https://media.giphy.com/media/l378k8bdzUanpWqKk/giphy.gif)
