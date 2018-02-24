@@ -14,7 +14,7 @@ supports all iPhone models
 
 
 
-### Frameworks used
+## Frameworks used
 
 AFNetworking
 
@@ -23,7 +23,7 @@ all other features in that app made by Vasiliy Egorov
 ## App features in Gif
 
 </br>
-- ul Random avatars depending on your name
+* ul Random avatars depending on your name
 </br>
 
 ![playerName](https://media.giphy.com/media/l378k8bdzUanpWqKk/giphy.gif)
