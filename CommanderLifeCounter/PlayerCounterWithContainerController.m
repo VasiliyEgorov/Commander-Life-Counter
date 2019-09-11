@@ -141,7 +141,7 @@ static NSString *kSettingsStartAnimation = @"animation";
         height = 25;
         width = height + (height * 0.5);
     }
-    if (h == IPHONE_X) {
+    if (h == IPHONE_X_XS || h == IPHONE_XSMAX_XR) {
         height = 25;
         width = height + (height * 0.5);
     }
@@ -172,8 +172,11 @@ static NSString *kSettingsStartAnimation = @"animation";
     if (h == IPHONE_6_7_PLUS) {
          height = AVATAR_HEIGHT_IPHONE_6_7_PLUS;
     }
-    if (h == IPHONE_X) {
-        height = AVATAR_HEIGHT_IPHONE_6_7_PLUS;
+    if (h == IPHONE_X_XS) {
+        height = AVATAR_HEIGHT_IPHONE_X_XS;
+    }
+    if (h == IPHONE_XSMAX_XR) {
+        height = AVATAR_HEIGHT_IPHONE_XSMAX_XR;
     }
     float width = height;
     float originX = [UIScreen mainScreen].bounds.size.width - width - [UIScreen mainScreen].bounds.size.width / 50;

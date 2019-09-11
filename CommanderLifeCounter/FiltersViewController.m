@@ -14,6 +14,7 @@
 #import "DoodleViewController.h"
 #import "TextToolViewController.h"
 #import "UIColor+Category.h"
+#import "Constants.h"
 
 NSString* const FilterToCropNotification = @"FilterToCropNotification";
 NSString* const FilterToStickerNotification = @"FilterToStickerNotification";
@@ -115,7 +116,7 @@ static NSString * const identifier = @"FiltersCell";
     
     self.height = self.collectionView.frame.size.height * 0.8;
     self.width = self.height * 0.8;
-    self.top = (self.collectionView.frame.size.height * 0.2) / 2;
+    self.top = 0;
     self.bottom = self.top;
     
 }
@@ -329,7 +330,7 @@ static NSString * const identifier = @"FiltersCell";
     return YES;
 }
 
-#pragma mark CollectionView delegate
+#pragma mark - CollectionView delegate
 
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -344,6 +345,11 @@ static NSString * const identifier = @"FiltersCell";
     }
 }
 
+#pragma mark - CollectionView scrollView
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    [self.collectionView reloadData];
+}
 
 #pragma mark - Flow delegate
 
@@ -356,8 +362,6 @@ static NSString * const identifier = @"FiltersCell";
 }
 
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
-    
-    
     
     return UIEdgeInsetsMake(self.top, 10, self.bottom, 10);
 }

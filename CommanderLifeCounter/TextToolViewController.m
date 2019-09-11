@@ -252,8 +252,14 @@ NSString* const TextSubviewsUserInfoKey = @"TextSubviewsUserInfoKey";
     CGFloat buttomOriginY = self.avatarImageView.frame.origin.y + self.avatarImageView.frame.size.height;
     CGFloat keyboardOriginY = self.layerView.frame.size.height + [UIApplication sharedApplication].statusBarFrame.size.height
                             + self.navigationController.navigationBar.frame.size.height - keyboardSize.height;
-    CGFloat offset = buttomOriginY - keyboardOriginY;
+    CGFloat h = [UIScreen mainScreen].bounds.size.height;
+    CGFloat offset = 0;
     
+    if (h == IPHONE_X_XS || h == IPHONE_XSMAX_XR) {
+         offset = buttomOriginY - keyboardOriginY - self.tabBarController.tabBar.frame.size.height;
+    } else {
+         offset = buttomOriginY - keyboardOriginY;
+    }
     self.textView.scrollEnabled = YES;
     
     CGRect newFrame = CGRectMake(CGRectGetMinX(self.avatarImageView.bounds), CGRectGetMinY(self.avatarImageView.bounds) - offset - 10,

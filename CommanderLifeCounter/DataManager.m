@@ -115,7 +115,7 @@
 - (void)contextDidSaveMainQueueContext:(NSNotification*)notification {
     
     [_mainQueueContext performBlock:^{
-        [_mainQueueContext mergeChangesFromContextDidSaveNotification:notification];
+        [self->_mainQueueContext mergeChangesFromContextDidSaveNotification:notification];
         
     }];
 }
@@ -123,7 +123,7 @@
 - (void)contextDidSavePrivateQueueContext:(NSNotification*)notification {
     
     [_privateQueueContext performBlock:^{
-        [_privateQueueContext mergeChangesFromContextDidSaveNotification:notification];
+        [self->_privateQueueContext mergeChangesFromContextDidSaveNotification:notification];
         
     }];
 }

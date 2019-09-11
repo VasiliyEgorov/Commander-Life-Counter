@@ -129,7 +129,7 @@
         
         float h = [UIScreen mainScreen].bounds.size.height;
         CGFloat widthValue = [UIScreen mainScreen].bounds.size.width / 2;
-        if (h == IPHONE_X) {
+        if (h == IPHONE_X_XS || h == IPHONE_XSMAX_XR) {
             widthValue = [UIScreen mainScreen].bounds.size.width / 1.6;
         }
         NSLayoutConstraint *height = [NSLayoutConstraint constraintWithItem:view attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:0 multiplier:1 constant:[UIScreen mainScreen].bounds.size.height / 2.3];

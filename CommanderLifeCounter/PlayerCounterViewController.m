@@ -109,11 +109,17 @@
         width = 215;
         originY = AVATAR_HEIGHT_IPHONE_6_7_PLUS - height - border * 3;
     }
-    if (h == IPHONE_X) {
+    if (h == IPHONE_X_XS) {
         
         height = 55;
         width = 200;
-        originY = AVATAR_HEIGHT_IPHONE_6_7_PLUS - height - border * 3;
+        originY = AVATAR_HEIGHT_IPHONE_X_XS - height - border * 3;
+    }
+    
+    if (h == IPHONE_XSMAX_XR) {
+        height = 55;
+        width = 200;
+        originY = AVATAR_HEIGHT_IPHONE_XSMAX_XR - height - border * 3;
     }
     self.playerNameTxt.frame = CGRectMake(originX, originY, width, height);
     self.playerNameTxt.font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:self.playerNameTxt.frame.size.height * 2.5/3];

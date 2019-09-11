@@ -56,9 +56,15 @@
         self.countersViewLeadingConstraint.constant = 24;
         self.countersViewBottomToLayoutMarginContraint.constant = 71;
     }
-    if (h == IPHONE_6_7_PLUS || h == IPHONE_X) {
+    if (h == IPHONE_6_7_PLUS || h == IPHONE_X_XS) {
         
         self.countersViewLeadingConstraint.constant = 7;
+    }
+    
+    if (h == IPHONE_XSMAX_XR) {
+        self.countersViewLeadingConstraint.constant = 6;
+        self.countersViewBottomToLayoutMarginContraint.constant = 183;
+        self.btnTopConstraint.constant = 99;
     }
     
     [self.view updateConstraintsIfNeeded];

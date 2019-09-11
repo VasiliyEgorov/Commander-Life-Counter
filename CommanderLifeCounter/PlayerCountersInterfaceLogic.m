@@ -196,7 +196,27 @@
 
 - (float)rowHeightForFirstSectionIsHiddenThirdRow:(BOOL)isHiddenThirdRow isHiddenFourthRow:(BOOL)isHiddenFourthRow {
     
-    if (self.h == IPHONE_X){
+    if (self.h == IPHONE_XSMAX_XR){
+        
+        self.firstRow = 272.f;
+        
+        if (!isHiddenThirdRow && !isHiddenFourthRow) {
+            
+            return self.firstRow;
+        }
+        if (isHiddenThirdRow && !isHiddenFourthRow){
+            
+            
+            self.firstRow = self.firstRow - 46;
+        }
+        if (isHiddenThirdRow && isHiddenFourthRow){
+            
+            
+            self.firstRow = self.firstRow - 70;
+        }
+    }
+    
+    if (self.h == IPHONE_X_XS){
         
         self.firstRow = 230.f;
         
@@ -288,10 +308,22 @@
 
 - (float)rowHeightForSecondSectionIsHiddenThirdRow:(BOOL)isHiddenThirdRow isHiddenFourthRow:(BOOL)isHiddenFourthRow {
    
+    if (self.h == IPHONE_XSMAX_XR){
+        
+        if (!isHiddenThirdRow && !isHiddenFourthRow) {
+            
+            self.secondRow = 132;
+        }
+        if (isHiddenThirdRow && !isHiddenFourthRow){
+            self.secondRow = 122;
+        }
+        if (isHiddenThirdRow && isHiddenFourthRow){
+            self.secondRow = 102;
+        }
+    }
     
-    if (self.h == IPHONE_X){
-        
-        
+    
+    if (self.h == IPHONE_X_XS){
         
         if (!isHiddenThirdRow && !isHiddenFourthRow) {
             
@@ -307,8 +339,6 @@
     
     
     if (self.h == IPHONE_6_7_PLUS){
-        
-        
         
         if (!isHiddenThirdRow && !isHiddenFourthRow) {
             
@@ -367,7 +397,25 @@
 
 - (float)rowHeightForThirdSectionIsHiddenThirdRow:(BOOL)isHiddenThirdRow isHiddenFourthRow:(BOOL)isHiddenFourthRow {
     
-    if (self.h == IPHONE_X){
+    if (self.h == IPHONE_XSMAX_XR){
+        
+        
+        
+        if (!isHiddenThirdRow && !isHiddenFourthRow) {
+            
+            self.thirdRow = 132;
+        }
+        if (isHiddenThirdRow && !isHiddenFourthRow){
+            self.thirdRow = 122;
+        }
+        if (isHiddenThirdRow && isHiddenFourthRow){
+            self.thirdRow = 102;
+        }
+        
+    }
+    
+    
+    if (self.h == IPHONE_X_XS){
         
         
         
@@ -444,7 +492,24 @@
 
 - (float)rowHeightForFourthSectionIsHiddenThirdRow:(BOOL)isHiddenThirdRow isHiddenFourthRow:(BOOL)isHiddenFourthRow {
     
-    if (self.h == IPHONE_X){
+    if (self.h == IPHONE_XSMAX_XR){
+        
+        
+        if (!isHiddenThirdRow && !isHiddenFourthRow) {
+            
+            self.fourthRow = 0;
+        }
+        
+        if (isHiddenThirdRow && !isHiddenFourthRow){
+            self.fourthRow = 122;
+        }
+        if (isHiddenThirdRow && isHiddenFourthRow){
+            self.fourthRow = 102;
+        }
+    }
+    
+    
+    if (self.h == IPHONE_X_XS){
         
         
         if (!isHiddenThirdRow && !isHiddenFourthRow) {
@@ -520,7 +585,27 @@
 
 - (float)rowHeightForFifthSectionIsHiddenThirdRow:(BOOL)isHiddenThirdRow isHiddenFourthRow:(BOOL)isHiddenFourthRow {
     
-    if (self.h == IPHONE_X){
+    if (self.h == IPHONE_XSMAX_XR){
+        
+        self.thithRow = 102.f;
+    }
+    
+    if (self.h == IPHONE_6_7_PLUS){
+        
+        self.thithRow = 102.f;
+    }
+    if (self.h == IPHONE_6_7){
+        
+        self.thithRow = 92.f;
+    }
+    if (self.h == IPHONE_5){
+        
+        self.thithRow = 76.f;
+        
+    }
+    
+    
+    if (self.h == IPHONE_X_XS){
         
         self.thithRow = 102.f;
     }

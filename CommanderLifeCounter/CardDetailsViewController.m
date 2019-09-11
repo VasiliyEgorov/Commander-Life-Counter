@@ -227,7 +227,7 @@
     
     float h = [UIScreen mainScreen].bounds.size.height;
     
-    if (h == IPHONE_X){
+    if (h == IPHONE_X_XS || h == IPHONE_XSMAX_XR){
         self.navigationItem.title = @"Card details";
         
         self.topTopStackViewContraint.constant = 105;
